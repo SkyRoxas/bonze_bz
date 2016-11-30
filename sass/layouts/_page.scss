@@ -1,0 +1,7 @@
+body.sidebar-first{
+  #page{
+    #main{
+      @include display-flex;
+    }
+  }
+}
