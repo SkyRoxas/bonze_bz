@@ -2,7 +2,11 @@ body.sidebar-first {
     #page {
         #main {
             @include display-flex;
-            #content {}
+            #content {
+              @include flex-scale(1);
+              padding: 40px;
+              box-sizing: border-box;
+            }
             .sidebars {
                 .region-sidebar-first {}
             }

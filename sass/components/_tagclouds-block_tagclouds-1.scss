@@ -1,11 +1,16 @@
 .tagclouds-block_tagclouds-1{
+  h2.block__title{
+    display: block;
+    box-sizing: border-box;
+    padding: 5px 40px;
+  }
   span{
     display: block;
     a.tagclouds{
       font-size: 1.2em;
       display: block;
       width: 100%;
-      padding: 10px 40px;
+      padding: 10px 80px;
       box-sizing: border-box;
     }
   }

@@ -8,15 +8,17 @@ jQuery(document).ready(function($) {
         $($scrollFixedItem).parent().parent().css({
             'position': 'relative',
         })
-        $($scrollFixedItem).parent().css({
-            'width': $($scrollFixedItem).width(),
-        })
+
         $($scrollFixedItem).css({
             'position': 'absolute',
             'top': '0',
             'bottom': 'auto',
             'height': '100%',
             'overflow-y': 'scroll',
+        })
+
+        $($scrollFixedItem).parent().css({
+            'width': $($scrollFixedItem).width(),
         })
 
         $startItem = '#header';
@@ -57,5 +59,9 @@ jQuery(document).ready(function($) {
 setTimeout(function(){
   scroll_fixed_lock('.region-sidebar-first');
 },2000);
+
+$(window).resize(function(){
+  scroll_fixed_lock('.region-sidebar-first');
+});
 
 })

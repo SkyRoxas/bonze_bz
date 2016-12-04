@@ -3685,6 +3685,14 @@ body.sidebar-first #page #main {
   display: -webkit-flex;
   display: flex;
 }
+/* line 5, ../sass/layouts/_page.scss */
+body.sidebar-first #page #main #content {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+}
 
 /* line 2, ../sass/components/_menu-block_menu-1.scss */
 .menu-block_menu-1 ul.menu {
@@ -3705,15 +3713,21 @@ body.sidebar-first #page #main {
 }
 
 /* line 2, ../sass/components/_tagclouds-block_tagclouds-1.scss */
+.tagclouds-block_tagclouds-1 h2.block__title {
+  display: block;
+  box-sizing: border-box;
+  padding: 5px 40px;
+}
+/* line 7, ../sass/components/_tagclouds-block_tagclouds-1.scss */
 .tagclouds-block_tagclouds-1 span {
   display: block;
 }
-/* line 4, ../sass/components/_tagclouds-block_tagclouds-1.scss */
+/* line 9, ../sass/components/_tagclouds-block_tagclouds-1.scss */
 .tagclouds-block_tagclouds-1 span a.tagclouds {
   font-size: 1.2em;
   display: block;
   width: 100%;
-  padding: 10px 40px;
+  padding: 10px 80px;
   box-sizing: border-box;
 }
 
