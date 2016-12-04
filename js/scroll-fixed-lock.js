@@ -47,7 +47,6 @@ jQuery(document).ready(function($) {
                 $($scrollFixedItem).css({
                     'top': 'auto',
                     'bottom': '0',
-                    'height':$(window).height() - $($endItem).height(),
                 })
             }
         })
@@ -55,6 +54,8 @@ jQuery(document).ready(function($) {
 
 
     }
+setTimeout(function(){
+  scroll_fixed_lock('.region-sidebar-first');
+},2000);
 
-    scroll_fixed_lock('.region-sidebar-first');
 })
