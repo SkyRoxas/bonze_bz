@@ -56,12 +56,28 @@ jQuery(document).ready(function($) {
 
 
     }
-setTimeout(function(){
-  scroll_fixed_lock('.region-sidebar-first');
-},2000);
 
-$(window).resize(function(){
-  scroll_fixed_lock('.region-sidebar-first');
-});
+
+    $(document).ready(function() {
+        scroll_fixed_lock('.region-sidebar-first');
+    })
+
+    setTimeout(function() {
+        scroll_fixed_lock('.region-sidebar-first');
+    }, 1000);
+
+
+
+    $(window).resize(function() {
+        scroll_fixed_lock('.region-sidebar-first');
+    });
+
+    //防呆 disqus 後面 loading出的高
+    setTimeout(function() {
+        if ($('#disqus_thread').length > 0) {
+            scroll_fixed_lock('.region-sidebar-first');
+        }
+    }, 2500);
+
 
 })
