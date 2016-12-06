@@ -1,0 +1,23 @@
+.views-block_time-line {
+    .view > .view-content {
+        .item-list {
+            padding: 40px 0;
+        }
+    }
+}
+
+.timeLine {
+    position: relative;
+    box-sizing: border-box;
+    border-top: 5px solid #98ACC0;
+    border-bottom: 5px solid #98ACC0;
+
+    .timeline-bar {
+        @include absolute-align(center,left);
+        @include transition(1s);
+        height: 0px;
+        width: 5px;
+        max-height: 100%;
+        background: #98ACC0;
+    }
+}

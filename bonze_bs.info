@@ -68,6 +68,7 @@ stylesheets[all][] = css/styles.css
 
 ;scripts[] = js/script.js
 scripts[] = js/scroll-fixed-lock.js
+scripts[] = js/views-block_time-line.js
 
 
 ; This section lists the regions defined in Zen's default page.tpl.php and

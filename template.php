@@ -130,3 +130,25 @@ function bonze_bs_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+function bonze_bs_preprocess_node(&$variables, $hook){
+
+  if($variables['view_mode']=='vm_1'){
+      //dpm($variables);
+        $variables['content']['calendar']['#prefix']='<div class ="row wrapper">';
+        $variables['content']['ds_user_picture']['#prefix']='<div class ="perfile-wrapper wrapper col-xs-6 flex-end-col">';
+        $variables['content']['author']['#suffix']='</div></div>';
+        $variables['content']['title']['#prefix']='<div class ="content-wrapper wrapper col-xs-6">';
+        $variables['content']['field_like']['#suffix']='</div></div></div>';
+
+        if($variables['zebra'] == "odd"){
+          $variables['content']['ds_user_picture']['#prefix']='<div class ="wrapper col-xs-6 flex-end-col flex-middle-col"><div class ="perfile-wrapper">';
+          $variables['content']['title']['#prefix']='<div class ="wrapper col-xs-6"><div class ="content-wrapper">';
+        }
+        if($variables['zebra'] == "even"){
+          $variables['content']['calendar']['#prefix']='<div class ="row wrapper reverse">';
+          $variables['content']['ds_user_picture']['#prefix']='<div class ="wrapper col-xs-6 flex-start-col flex-middle-col"><div class ="perfile-wrapper">';
+          $variables['content']['title']['#prefix']='<div class ="wrapper col-xs-6"><div class ="content-wrapper">';
+        }
+  }
+}

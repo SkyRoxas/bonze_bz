@@ -2809,6 +2809,60 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   align-items: center;
 }
 
+/* line 33, ../sass/mixin/sass-collection/layout/_flex-layout.scss */
+.flex-start {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: start;
+  -ms-justify-content: start;
+  justify-content: start;
+}
+
+/* line 38, ../sass/mixin/sass-collection/layout/_flex-layout.scss */
+.flex-end {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+/* line 43, ../sass/mixin/sass-collection/layout/_flex-layout.scss */
+.flex-middle-col {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+
+/* line 48, ../sass/mixin/sass-collection/layout/_flex-layout.scss */
+.flex-start-col {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+}
+
+/* line 54, ../sass/mixin/sass-collection/layout/_flex-layout.scss */
+.flex-end-col {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-end;
+  -ms-align-items: flex-end;
+  align-items: flex-end;
+}
+
 /* line 2, ../sass/mixin/sass-collection/layout/_parallax.scss */
 .parallax-mirror-top .parallax-mirror {
   top: 0px !important;
@@ -3210,7 +3264,14 @@ body.hide_title h1#page-title {
   display: none;
 }
 
-/* line 35, ../sass/base/_global.scss */
+/* line 38, ../sass/base/_global.scss */
+h2.block__title {
+  color: #98ACC0;
+  font-size: 30px;
+  padding: 20px 10px;
+}
+
+/* line 44, ../sass/base/_global.scss */
 a {
   color: #2A3E53;
 }
@@ -3361,11 +3422,11 @@ body .margin-bottom-lg {
 }
 /* line 5, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
 .list-margin-lg > * {
-  margin: -40px -40px;
+  margin: -80px -80px;
 }
 /* line 7, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
 .list-margin-lg > * > * {
-  padding: 40px 40px;
+  padding: 80px 80px;
   box-sizing: border-box;
 }
 
@@ -3706,6 +3767,69 @@ body.sidebar-first #page #main #content {
   padding: 30px 20px;
 }
 
+/* line 1, ../sass/components/_view-mode_mode-1.scss */
+.view-mode-vm_1 {
+  position: relative;
+  position: relative;
+  overflow: hidden;
+  clear: both;
+}
+/* line 5, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
+.view-mode-vm_1 > * {
+  margin: 0px -180px;
+}
+/* line 7, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
+.view-mode-vm_1 > * > * {
+  padding: 0px 180px;
+  box-sizing: border-box;
+}
+/* line 5, ../sass/components/_view-mode_mode-1.scss */
+.view-mode-vm_1 .field-name-calendar {
+  position: absolute;
+  box-sizing: border-box;
+  padding: !important;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 11, ../sass/components/_view-mode_mode-1.scss */
+.view-mode-vm_1 .perfile-wrapper .field-name-ds-user-picture {
+  border: 5px solid #98ACC0;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 23, ../sass/components/_view-mode_mode-1.scss */
+.view-mode-vm_1 .content-wrapper {
+  position: relative;
+  box-sizing: border-box;
+  border: 2px solid #98ACC0;
+  border-radius: 20px;
+  padding: 20px 25px;
+  background: #ffffff;
+  margin: 10px;
+}
+/* line 32, ../sass/components/_view-mode_mode-1.scss */
+.view-mode-vm_1 .content-wrapper:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -8px;
+  bottom: -10px;
+  background: #DCDCDC;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+/* line 46, ../sass/components/_view-mode_mode-1.scss */
+li.views-row {
+  display: block;
+}
+
 /* line 1, ../sass/components/_nav-logo.scss */
 #logo {
   float: none;
@@ -3729,6 +3853,87 @@ body.sidebar-first #page #main #content {
   width: 100%;
   padding: 10px 80px;
   box-sizing: border-box;
+}
+
+/* line 2, ../sass/components/_calendar_mode-1.scss */
+.calendar_mode-1 .wrapper {
+  position: relative;
+  display: block;
+  width: 110px;
+}
+/* line 8, ../sass/components/_calendar_mode-1.scss */
+.calendar_mode-1 .wrapper:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #DCDCDC;
+  top: 5px;
+  left: -4px;
+  z-index: -1;
+  border-radius: 5px;
+}
+/* line 20, ../sass/components/_calendar_mode-1.scss */
+.calendar_mode-1 .wrapper .month {
+  display: block;
+  background: #98ACC0;
+  padding: 10px 8px 5px;
+  color: #ffffff;
+  font-size: 15px;
+  position: relative;
+}
+/* line 27, ../sass/components/_calendar_mode-1.scss */
+.calendar_mode-1 .wrapper .month:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 85%;
+  height: 1px;
+  background: #DCDCDC;
+  bottom: 5px;
+  border-radius: 5px;
+}
+/* line 38, ../sass/components/_calendar_mode-1.scss */
+.calendar_mode-1 .wrapper .date {
+  text-align: center;
+  padding: 20px 10px;
+  background: #ffffff;
+  color: #98ACC0;
+  font-size: 25px;
+  border: 1px solid #e8e9eb;
+  border-top: none;
+}
+
+/* line 3, ../sass/components/_views-block_time-line.scss */
+.views-block_time-line .view > .view-content .item-list {
+  padding: 40px 0;
+}
+
+/* line 9, ../sass/components/_views-block_time-line.scss */
+.timeLine {
+  position: relative;
+  box-sizing: border-box;
+  border-top: 5px solid #98ACC0;
+  border-bottom: 5px solid #98ACC0;
+}
+/* line 15, ../sass/components/_views-block_time-line.scss */
+.timeLine .timeline-bar {
+  position: absolute;
+  box-sizing: border-box;
+  padding: !important;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 0px;
+  width: 5px;
+  max-height: 100%;
+  background: #98ACC0;
 }
 
 /* SMACSS theme rules */

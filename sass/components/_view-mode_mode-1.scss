@@ -1,0 +1,48 @@
+.view-mode-vm_1 {
+    position: relative;
+    @include child-margin(180px,0px);
+
+    .field-name-calendar {
+        @include absolute-align(center,center);
+    }
+
+//perfile info
+    .perfile-wrapper {
+        .field-name-ds-user-picture {
+            border: 5px solid #98ACC0;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .field-name-author {
+            //display: none;
+        }
+    }
+//artcle info
+    .content-wrapper {
+        position: relative;
+        box-sizing: border-box;
+        border: 2px solid #98ACC0;
+        border-radius: 20px;
+        padding: 20px 25px;
+        background: #ffffff;
+        margin: 10px;
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            @include size(100%);
+            right: -8px;
+            bottom: -10px;
+            background: #DCDCDC;
+            border-radius: 20px;
+            z-index: -1;
+        }
+    }
+}
+
+li.views-row {
+    display: block;
+}
