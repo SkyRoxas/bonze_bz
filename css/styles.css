@@ -2938,15 +2938,15 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   }
 }
 /* line 12, ../sass/mixin/sass-collection/effect/_fadein.scss */
-.fadeIn_0 {
+.fadeIn-0 {
   opacity: 0;
 }
 
 /* line 16, ../sass/mixin/sass-collection/effect/_fadein.scss */
-.fadeIn_100 {
-  -moz-animation: fadeIn 1.5s;
-  -webkit-animation: fadeIn 1.5s;
-  animation: fadeIn 1.5s;
+.fadeIn-100 {
+  -moz-animation: fadeIn 0.8s;
+  -webkit-animation: fadeIn 0.8s;
+  animation: fadeIn 0.8s;
   opacity: 100;
 }
 
@@ -3756,7 +3756,7 @@ body.sidebar-first #page #main #content {
 @media screen and (min-width: 768px) {
   /* line 6, ../sass/layouts/_page.scss */
   body.sidebar-first #page #main #content {
-    padding: 80px;
+    padding: 40px 80px 80px 80px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -3764,6 +3764,12 @@ body.sidebar-first #page #main #content {
   body.sidebar-first #page #main #content {
     padding: 80px 40px;
   }
+}
+
+/* line 1, ../sass/layouts/_footer.scss */
+#footer {
+  background: #98ACC0;
+  color: #ffffff;
 }
 
 /* line 2, ../sass/components/_menu-block_menu-1.scss */

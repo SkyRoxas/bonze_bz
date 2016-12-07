@@ -9,12 +9,12 @@
   }
 }
 
-.fadeIn_0 {
+.fadeIn-0 {
   opacity: 0;
 }
 
-.fadeIn_100 {
-  @include animation(fadeIn 1.5s);
+.fadeIn-100 {
+  @include animation(fadeIn 0.8s);
   opacity: 100;
 }
 //fadin left--------------------------------------------------------------------
