@@ -2,11 +2,18 @@ body.sidebar-first {
     #page {
         #main {
             @include display-flex;
+
             #content {
-              @include flex-scale(1);
-              padding: 40px 80px;
-              box-sizing: border-box;
+                @include flex-scale(1);
+                @include rwd-screen(pc,pad) {
+                    padding: 80px;
+                }
+                @include rwd-screen(small-pad,phone) {
+                    padding: 80px 40px;
+                }
+                box-sizing: border-box;
             }
+
             .sidebars {
                 .region-sidebar-first {}
             }

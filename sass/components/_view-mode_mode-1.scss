@@ -1,10 +1,13 @@
 .view-mode-vm_1 {
     position: relative;
-    @include child-margin(180px,0px);
 
-    .field-name-calendar {
-        @include absolute-align(center,center);
+    @include rwd-screen(pc){
+      @include child-margin(180px,0px);
     }
+    @include rwd-screen(pad,phone){
+      @include child-margin(40px,0px);
+    }
+
 
 //perfile info
     .perfile-wrapper {
@@ -13,6 +16,7 @@
             border-radius: 50%;
             position: relative;
             overflow: hidden;
+            @include rwd-coding(max-width,100%,120px,85px,85px);
         }
 
         .field-name-author {

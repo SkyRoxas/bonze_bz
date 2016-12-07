@@ -1,3 +1,4 @@
+//48 64 75
 .container,
 .container-fluid {
     //margin-right: auto;
@@ -467,9 +468,9 @@
         order: 1;
     }
 }
-@media only screen and (min-width:64em) {
+@media only screen and (min-width:95em) {
     .container {
-        width: 65rem;
+        width: 96rem;
     }
     .col-md,
     .col-md-1,
@@ -682,9 +683,9 @@
         order: 1;
     }
 }
-@media only screen and (min-width:75em) {
+@media only screen and (min-width:115em) {
     .container {
-        width: 76rem;
+        width: 116rem;
     }
     .col-lg,
     .col-lg-1,

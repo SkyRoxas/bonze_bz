@@ -134,21 +134,24 @@ function bonze_bs_preprocess_block(&$variables, $hook) {
 function bonze_bs_preprocess_node(&$variables, $hook){
 
   if($variables['view_mode']=='vm_1'){
+
+    $colClass1 ="col-lg-6 col-md-6 col-xs-12";
+
       //dpm($variables);
         $variables['content']['calendar']['#prefix']='<div class ="row wrapper">';
         $variables['content']['ds_user_picture']['#prefix']='<div class ="field-perfile col-xs-6 flex-end-col"><div class ="perfile-wrapper wrapper">';
         $variables['content']['author']['#suffix']='</div></div>';
-        $variables['content']['title']['#prefix']='<div class ="field-content col-xs-6"><div class ="content-wrapper wrapper">';
+        $variables['content']['title']['#prefix']='<div class ="field-content'.$colClass1.'"><div class ="content-wrapper wrapper">';
         $variables['content']['field_like']['#suffix']='</div></div></div>';
 
         if($variables['zebra'] == "odd"){
-          $variables['content']['ds_user_picture']['#prefix']='<div class ="field-perfile col-xs-6 flex-end-col flex-middle-col"><div class ="perfile-wrapper wrapper">';
-          $variables['content']['title']['#prefix']='<div class ="field-content col-xs-6"><div class ="content-wrapper wrapper">';
+          $variables['content']['ds_user_picture']['#prefix']='<div class ="field-perfile col-xs-6 row end-lg end-md start-xs middle-xs"><div class ="perfile-wrapper wrapper">';
+          $variables['content']['title']['#prefix']='<div class ="field-content '.$colClass1.'"><div class ="content-wrapper wrapper">';
         }
         if($variables['zebra'] == "even"){
           $variables['content']['calendar']['#prefix']='<div class ="row wrapper reverse">';
-          $variables['content']['ds_user_picture']['#prefix']='<div class ="field-perfile  col-xs-6 flex-start-col flex-middle-col"><div class ="perfile-wrapper wrapper">';
-          $variables['content']['title']['#prefix']='<div class ="field-content col-xs-6"><div class ="content-wrapper wrapper">';
+          $variables['content']['ds_user_picture']['#prefix']='<div class ="field-perfile  col-xs-6 row start-lg start-md end-xs middle-xs"><div class ="perfile-wrapper wrapper">';
+          $variables['content']['title']['#prefix']='<div class ="field-content '.$colClass1.'"><div class ="content-wrapper wrapper">';
         }
   }
 }

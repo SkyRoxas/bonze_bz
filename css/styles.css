@@ -1550,7 +1550,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
 /*************************************
                             favorites
 **************************************/
-/* line 10, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 11, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .row {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1571,7 +1571,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   flex-wrap: wrap;
 }
 
-/* line 31, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 32, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .row.reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -1580,7 +1580,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   flex-direction: row-reverse;
 }
 
-/* line 38, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 39, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col.reverse {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
@@ -1589,7 +1589,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   flex-direction: column-reverse;
 }
 
-/* line 45, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 46, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs,
 .col-xs-1,
 .col-xs-10,
@@ -1624,7 +1624,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   padding-left: 0.5rem;
 }
 
-/* line 78, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 79, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -1636,7 +1636,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   max-width: 100%;
 }
 
-/* line 88, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 89, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-1 {
   -webkit-flex-basis: 8.333%;
   -ms-flex-preferred-size: 8.333%;
@@ -1644,7 +1644,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   max-width: 8.333%;
 }
 
-/* line 94, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 95, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-2 {
   -webkit-flex-basis: 16.667%;
   -ms-flex-preferred-size: 16.667%;
@@ -1652,7 +1652,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   max-width: 16.667%;
 }
 
-/* line 100, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 101, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-3 {
   -webkit-flex-basis: 25%;
   -ms-flex-preferred-size: 25%;
@@ -1660,7 +1660,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   max-width: 25%;
 }
 
-/* line 106, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 107, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-4 {
   -webkit-flex-basis: 33.333%;
   -ms-flex-preferred-size: 33.333%;
@@ -1668,7 +1668,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   max-width: 33.333%;
 }
 
-/* line 112, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 113, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-5 {
   -webkit-flex-basis: 41.667%;
   -ms-flex-preferred-size: 41.667%;
@@ -1676,7 +1676,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   max-width: 41.667%;
 }
 
-/* line 118, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 119, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-6 {
   -webkit-flex-basis: 50%;
   -ms-flex-preferred-size: 50%;
@@ -1684,7 +1684,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   max-width: 50%;
 }
 
-/* line 124, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 125, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-7 {
   -webkit-flex-basis: 58.333%;
   -ms-flex-preferred-size: 58.333%;
@@ -1692,7 +1692,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   max-width: 58.333%;
 }
 
-/* line 130, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 131, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-8 {
   -webkit-flex-basis: 66.667%;
   -ms-flex-preferred-size: 66.667%;
@@ -1700,7 +1700,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   max-width: 66.667%;
 }
 
-/* line 136, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 137, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-9 {
   -webkit-flex-basis: 75%;
   -ms-flex-preferred-size: 75%;
@@ -1708,7 +1708,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   max-width: 75%;
 }
 
-/* line 142, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 143, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-10 {
   -webkit-flex-basis: 83.333%;
   -ms-flex-preferred-size: 83.333%;
@@ -1716,7 +1716,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   max-width: 83.333%;
 }
 
-/* line 148, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 149, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-11 {
   -webkit-flex-basis: 91.667%;
   -ms-flex-preferred-size: 91.667%;
@@ -1724,7 +1724,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   max-width: 91.667%;
 }
 
-/* line 154, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 155, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-12 {
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
@@ -1732,62 +1732,62 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   max-width: 100%;
 }
 
-/* line 160, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 161, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-offset-1 {
   margin-left: 8.333%;
 }
 
-/* line 163, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 164, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-offset-2 {
   margin-left: 16.667%;
 }
 
-/* line 166, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 167, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-offset-3 {
   margin-left: 25%;
 }
 
-/* line 169, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 170, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-offset-4 {
   margin-left: 33.333%;
 }
 
-/* line 172, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 173, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-offset-5 {
   margin-left: 41.667%;
 }
 
-/* line 175, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 176, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-offset-6 {
   margin-left: 50%;
 }
 
-/* line 178, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 179, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-offset-7 {
   margin-left: 58.333%;
 }
 
-/* line 181, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 182, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-offset-8 {
   margin-left: 66.667%;
 }
 
-/* line 184, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 185, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-offset-9 {
   margin-left: 75%;
 }
 
-/* line 187, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 188, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-offset-10 {
   margin-left: 83.333%;
 }
 
-/* line 190, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 191, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .col-xs-offset-11 {
   margin-left: 91.667%;
 }
 
-/* line 193, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 194, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .start-xs {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -1796,7 +1796,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   text-align: start;
 }
 
-/* line 200, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 201, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .center-xs {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1805,7 +1805,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   text-align: center;
 }
 
-/* line 207, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 208, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .end-xs {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -1814,7 +1814,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   text-align: end;
 }
 
-/* line 214, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 215, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .top-xs {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
@@ -1822,7 +1822,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   align-items: flex-start;
 }
 
-/* line 220, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 221, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .middle-xs {
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -1830,7 +1830,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   align-items: center;
 }
 
-/* line 226, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 227, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .bottom-xs {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
@@ -1838,14 +1838,14 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   align-items: flex-end;
 }
 
-/* line 232, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 233, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .around-xs {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
-/* line 237, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 238, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .between-xs {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -1853,7 +1853,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   justify-content: space-between;
 }
 
-/* line 243, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 244, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .first-xs {
   -webkit-box-ordinal-group: 0;
   -webkit-order: -1;
@@ -1861,7 +1861,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
   order: -1;
 }
 
-/* line 249, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+/* line 250, ../sass/mixin/sass-collection/layout/_flex-box.scss */
 .last-xs {
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
@@ -1870,12 +1870,12 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 256, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 257, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .container {
     width: 49rem;
   }
 
-  /* line 259, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 260, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm,
   .col-sm-1,
   .col-sm-10,
@@ -1910,7 +1910,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     padding-left: 0.5rem;
   }
 
-  /* line 292, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 293, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
@@ -1922,7 +1922,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 100%;
   }
 
-  /* line 302, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 303, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-1 {
     -webkit-flex-basis: 8.333%;
     -ms-flex-preferred-size: 8.333%;
@@ -1930,7 +1930,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 8.333%;
   }
 
-  /* line 308, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 309, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-2 {
     -webkit-flex-basis: 16.667%;
     -ms-flex-preferred-size: 16.667%;
@@ -1938,7 +1938,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 16.667%;
   }
 
-  /* line 314, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 315, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-3 {
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
@@ -1946,7 +1946,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 25%;
   }
 
-  /* line 320, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 321, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-4 {
     -webkit-flex-basis: 33.333%;
     -ms-flex-preferred-size: 33.333%;
@@ -1954,7 +1954,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 33.333%;
   }
 
-  /* line 326, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 327, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-5 {
     -webkit-flex-basis: 41.667%;
     -ms-flex-preferred-size: 41.667%;
@@ -1962,7 +1962,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 41.667%;
   }
 
-  /* line 332, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 333, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-6 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -1970,7 +1970,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 50%;
   }
 
-  /* line 338, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 339, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-7 {
     -webkit-flex-basis: 58.333%;
     -ms-flex-preferred-size: 58.333%;
@@ -1978,7 +1978,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 58.333%;
   }
 
-  /* line 344, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 345, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-8 {
     -webkit-flex-basis: 66.667%;
     -ms-flex-preferred-size: 66.667%;
@@ -1986,7 +1986,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 66.667%;
   }
 
-  /* line 350, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 351, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-9 {
     -webkit-flex-basis: 75%;
     -ms-flex-preferred-size: 75%;
@@ -1994,7 +1994,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 75%;
   }
 
-  /* line 356, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 357, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-10 {
     -webkit-flex-basis: 83.333%;
     -ms-flex-preferred-size: 83.333%;
@@ -2002,7 +2002,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 83.333%;
   }
 
-  /* line 362, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 363, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-11 {
     -webkit-flex-basis: 91.667%;
     -ms-flex-preferred-size: 91.667%;
@@ -2010,7 +2010,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 91.667%;
   }
 
-  /* line 368, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 369, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-12 {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -2018,62 +2018,62 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 100%;
   }
 
-  /* line 374, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 375, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-offset-1 {
     margin-left: 8.333%;
   }
 
-  /* line 377, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 378, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-offset-2 {
     margin-left: 16.667%;
   }
 
-  /* line 380, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 381, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-offset-3 {
     margin-left: 25%;
   }
 
-  /* line 383, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 384, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-offset-4 {
     margin-left: 33.333%;
   }
 
-  /* line 386, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 387, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-offset-5 {
     margin-left: 41.667%;
   }
 
-  /* line 389, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 390, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-offset-6 {
     margin-left: 50%;
   }
 
-  /* line 392, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 393, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-offset-7 {
     margin-left: 58.333%;
   }
 
-  /* line 395, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 396, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-offset-8 {
     margin-left: 66.667%;
   }
 
-  /* line 398, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 399, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-offset-9 {
     margin-left: 75%;
   }
 
-  /* line 401, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 402, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-offset-10 {
     margin-left: 83.333%;
   }
 
-  /* line 404, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 405, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-sm-offset-11 {
     margin-left: 91.667%;
   }
 
-  /* line 407, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 408, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .start-sm {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -2082,7 +2082,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     text-align: start;
   }
 
-  /* line 414, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 415, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .center-sm {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -2091,7 +2091,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     text-align: center;
   }
 
-  /* line 421, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 422, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .end-sm {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
@@ -2100,7 +2100,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     text-align: end;
   }
 
-  /* line 428, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 429, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .top-sm {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -2108,7 +2108,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     align-items: flex-start;
   }
 
-  /* line 434, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 435, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .middle-sm {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -2116,7 +2116,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     align-items: center;
   }
 
-  /* line 440, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 441, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .bottom-sm {
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
@@ -2124,14 +2124,14 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     align-items: flex-end;
   }
 
-  /* line 446, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 447, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .around-sm {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
-  /* line 451, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 452, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .between-sm {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -2139,7 +2139,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     justify-content: space-between;
   }
 
-  /* line 457, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 458, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .first-sm {
     -webkit-box-ordinal-group: 0;
     -webkit-order: -1;
@@ -2147,7 +2147,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     order: -1;
   }
 
-  /* line 463, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 464, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .last-sm {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
@@ -2155,13 +2155,13 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     order: 1;
   }
 }
-@media only screen and (min-width: 64em) {
-  /* line 471, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+@media only screen and (min-width: 95em) {
+  /* line 472, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .container {
-    width: 65rem;
+    width: 96rem;
   }
 
-  /* line 474, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 475, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md,
   .col-md-1,
   .col-md-10,
@@ -2196,7 +2196,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     padding-left: 0.5rem;
   }
 
-  /* line 507, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 508, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
@@ -2208,7 +2208,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 100%;
   }
 
-  /* line 517, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 518, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-1 {
     -webkit-flex-basis: 8.333%;
     -ms-flex-preferred-size: 8.333%;
@@ -2216,7 +2216,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 8.333%;
   }
 
-  /* line 523, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 524, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-2 {
     -webkit-flex-basis: 16.667%;
     -ms-flex-preferred-size: 16.667%;
@@ -2224,7 +2224,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 16.667%;
   }
 
-  /* line 529, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 530, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-3 {
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
@@ -2232,7 +2232,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 25%;
   }
 
-  /* line 535, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 536, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-4 {
     -webkit-flex-basis: 33.333%;
     -ms-flex-preferred-size: 33.333%;
@@ -2240,7 +2240,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 33.333%;
   }
 
-  /* line 541, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 542, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-5 {
     -webkit-flex-basis: 41.667%;
     -ms-flex-preferred-size: 41.667%;
@@ -2248,7 +2248,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 41.667%;
   }
 
-  /* line 547, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 548, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-6 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -2256,7 +2256,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 50%;
   }
 
-  /* line 553, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 554, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-7 {
     -webkit-flex-basis: 58.333%;
     -ms-flex-preferred-size: 58.333%;
@@ -2264,7 +2264,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 58.333%;
   }
 
-  /* line 559, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 560, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-8 {
     -webkit-flex-basis: 66.667%;
     -ms-flex-preferred-size: 66.667%;
@@ -2272,7 +2272,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 66.667%;
   }
 
-  /* line 565, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 566, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-9 {
     -webkit-flex-basis: 75%;
     -ms-flex-preferred-size: 75%;
@@ -2280,7 +2280,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 75%;
   }
 
-  /* line 571, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 572, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-10 {
     -webkit-flex-basis: 83.333%;
     -ms-flex-preferred-size: 83.333%;
@@ -2288,7 +2288,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 83.333%;
   }
 
-  /* line 577, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 578, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-11 {
     -webkit-flex-basis: 91.667%;
     -ms-flex-preferred-size: 91.667%;
@@ -2296,7 +2296,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 91.667%;
   }
 
-  /* line 583, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 584, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-12 {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -2304,62 +2304,62 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 100%;
   }
 
-  /* line 589, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 590, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-offset-1 {
     margin-left: 8.333%;
   }
 
-  /* line 592, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 593, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-offset-2 {
     margin-left: 16.667%;
   }
 
-  /* line 595, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 596, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-offset-3 {
     margin-left: 25%;
   }
 
-  /* line 598, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 599, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-offset-4 {
     margin-left: 33.333%;
   }
 
-  /* line 601, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 602, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-offset-5 {
     margin-left: 41.667%;
   }
 
-  /* line 604, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 605, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-offset-6 {
     margin-left: 50%;
   }
 
-  /* line 607, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 608, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-offset-7 {
     margin-left: 58.333%;
   }
 
-  /* line 610, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 611, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-offset-8 {
     margin-left: 66.667%;
   }
 
-  /* line 613, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 614, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-offset-9 {
     margin-left: 75%;
   }
 
-  /* line 616, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 617, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-offset-10 {
     margin-left: 83.333%;
   }
 
-  /* line 619, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 620, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-md-offset-11 {
     margin-left: 91.667%;
   }
 
-  /* line 622, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 623, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .start-md {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -2368,7 +2368,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     text-align: start;
   }
 
-  /* line 629, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 630, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .center-md {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -2377,7 +2377,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     text-align: center;
   }
 
-  /* line 636, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 637, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .end-md {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
@@ -2386,7 +2386,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     text-align: end;
   }
 
-  /* line 643, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 644, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .top-md {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -2394,7 +2394,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     align-items: flex-start;
   }
 
-  /* line 649, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 650, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .middle-md {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -2402,7 +2402,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     align-items: center;
   }
 
-  /* line 655, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 656, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .bottom-md {
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
@@ -2410,14 +2410,14 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     align-items: flex-end;
   }
 
-  /* line 661, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 662, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .around-md {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
-  /* line 666, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 667, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .between-md {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -2425,7 +2425,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     justify-content: space-between;
   }
 
-  /* line 672, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 673, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .first-md {
     -webkit-box-ordinal-group: 0;
     -webkit-order: -1;
@@ -2433,7 +2433,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     order: -1;
   }
 
-  /* line 678, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 679, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .last-md {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
@@ -2441,13 +2441,13 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     order: 1;
   }
 }
-@media only screen and (min-width: 75em) {
-  /* line 686, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+@media only screen and (min-width: 115em) {
+  /* line 687, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .container {
-    width: 76rem;
+    width: 116rem;
   }
 
-  /* line 689, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 690, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg,
   .col-lg-1,
   .col-lg-10,
@@ -2482,7 +2482,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     padding-left: 0.5rem;
   }
 
-  /* line 722, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 723, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
@@ -2494,7 +2494,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 100%;
   }
 
-  /* line 732, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 733, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-1 {
     -webkit-flex-basis: 8.333%;
     -ms-flex-preferred-size: 8.333%;
@@ -2502,7 +2502,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 8.333%;
   }
 
-  /* line 738, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 739, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-2 {
     -webkit-flex-basis: 16.667%;
     -ms-flex-preferred-size: 16.667%;
@@ -2510,7 +2510,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 16.667%;
   }
 
-  /* line 744, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 745, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-3 {
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
@@ -2518,7 +2518,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 25%;
   }
 
-  /* line 750, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 751, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-4 {
     -webkit-flex-basis: 33.333%;
     -ms-flex-preferred-size: 33.333%;
@@ -2526,7 +2526,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 33.333%;
   }
 
-  /* line 756, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 757, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-5 {
     -webkit-flex-basis: 41.667%;
     -ms-flex-preferred-size: 41.667%;
@@ -2534,7 +2534,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 41.667%;
   }
 
-  /* line 762, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 763, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-6 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -2542,7 +2542,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 50%;
   }
 
-  /* line 768, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 769, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-7 {
     -webkit-flex-basis: 58.333%;
     -ms-flex-preferred-size: 58.333%;
@@ -2550,7 +2550,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 58.333%;
   }
 
-  /* line 774, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 775, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-8 {
     -webkit-flex-basis: 66.667%;
     -ms-flex-preferred-size: 66.667%;
@@ -2558,7 +2558,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 66.667%;
   }
 
-  /* line 780, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 781, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-9 {
     -webkit-flex-basis: 75%;
     -ms-flex-preferred-size: 75%;
@@ -2566,7 +2566,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 75%;
   }
 
-  /* line 786, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 787, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-10 {
     -webkit-flex-basis: 83.333%;
     -ms-flex-preferred-size: 83.333%;
@@ -2574,7 +2574,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 83.333%;
   }
 
-  /* line 792, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 793, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-11 {
     -webkit-flex-basis: 91.667%;
     -ms-flex-preferred-size: 91.667%;
@@ -2582,7 +2582,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 91.667%;
   }
 
-  /* line 798, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 799, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-12 {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -2590,62 +2590,62 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     max-width: 100%;
   }
 
-  /* line 804, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 805, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-offset-1 {
     margin-left: 8.333%;
   }
 
-  /* line 807, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 808, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-offset-2 {
     margin-left: 16.667%;
   }
 
-  /* line 810, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 811, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-offset-3 {
     margin-left: 25%;
   }
 
-  /* line 813, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 814, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-offset-4 {
     margin-left: 33.333%;
   }
 
-  /* line 816, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 817, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-offset-5 {
     margin-left: 41.667%;
   }
 
-  /* line 819, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 820, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-offset-6 {
     margin-left: 50%;
   }
 
-  /* line 822, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 823, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-offset-7 {
     margin-left: 58.333%;
   }
 
-  /* line 825, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 826, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-offset-8 {
     margin-left: 66.667%;
   }
 
-  /* line 828, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 829, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-offset-9 {
     margin-left: 75%;
   }
 
-  /* line 831, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 832, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-offset-10 {
     margin-left: 83.333%;
   }
 
-  /* line 834, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 835, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .col-lg-offset-11 {
     margin-left: 91.667%;
   }
 
-  /* line 837, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 838, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .start-lg {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -2654,7 +2654,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     text-align: start;
   }
 
-  /* line 844, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 845, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .center-lg {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -2663,7 +2663,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     text-align: center;
   }
 
-  /* line 851, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 852, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .end-lg {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
@@ -2672,7 +2672,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     text-align: end;
   }
 
-  /* line 858, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 859, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .top-lg {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -2680,7 +2680,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     align-items: flex-start;
   }
 
-  /* line 864, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 865, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .middle-lg {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -2688,7 +2688,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     align-items: center;
   }
 
-  /* line 870, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 871, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .bottom-lg {
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
@@ -2696,14 +2696,14 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     align-items: flex-end;
   }
 
-  /* line 876, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 877, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .around-lg {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
-  /* line 881, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 882, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .between-lg {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -2711,7 +2711,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     justify-content: space-between;
   }
 
-  /* line 887, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 888, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .first-lg {
     -webkit-box-ordinal-group: 0;
     -webkit-order: -1;
@@ -2719,7 +2719,7 @@ $margin-bottom =(這就不特別說了)有些特定的情況,必須要自己去�
     order: -1;
   }
 
-  /* line 893, ../sass/mixin/sass-collection/layout/_flex-box.scss */
+  /* line 894, ../sass/mixin/sass-collection/layout/_flex-box.scss */
   .last-lg {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
@@ -3746,13 +3746,24 @@ body.sidebar-first #page #main {
   display: -webkit-flex;
   display: flex;
 }
-/* line 5, ../sass/layouts/_page.scss */
+/* line 6, ../sass/layouts/_page.scss */
 body.sidebar-first #page #main #content {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 40px 80px;
   box-sizing: border-box;
+}
+@media screen and (min-width: 768px) {
+  /* line 6, ../sass/layouts/_page.scss */
+  body.sidebar-first #page #main #content {
+    padding: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 6, ../sass/layouts/_page.scss */
+  body.sidebar-first #page #main #content {
+    padding: 80px 40px;
+  }
 }
 
 /* line 2, ../sass/components/_menu-block_menu-1.scss */
@@ -3770,38 +3781,73 @@ body.sidebar-first #page #main #content {
 /* line 1, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 {
   position: relative;
-  position: relative;
-  overflow: hidden;
-  clear: both;
 }
-/* line 5, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
-.view-mode-vm_1 > * {
-  margin: 0px -180px;
+@media screen and (min-width: 1520px) {
+  /* line 1, ../sass/components/_view-mode_mode-1.scss */
+  .view-mode-vm_1 {
+    position: relative;
+    overflow: hidden;
+    clear: both;
+  }
+  /* line 5, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
+  .view-mode-vm_1 > * {
+    margin: 0px -180px;
+  }
+  /* line 7, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
+  .view-mode-vm_1 > * > * {
+    padding: 0px 180px;
+    box-sizing: border-box;
+  }
 }
-/* line 7, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
-.view-mode-vm_1 > * > * {
-  padding: 0px 180px;
-  box-sizing: border-box;
+@media screen and (max-width: 1519px) {
+  /* line 1, ../sass/components/_view-mode_mode-1.scss */
+  .view-mode-vm_1 {
+    position: relative;
+    overflow: hidden;
+    clear: both;
+  }
+  /* line 5, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
+  .view-mode-vm_1 > * {
+    margin: 0px -40px;
+  }
+  /* line 7, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
+  .view-mode-vm_1 > * > * {
+    padding: 0px 40px;
+    box-sizing: border-box;
+  }
 }
-/* line 5, ../sass/components/_view-mode_mode-1.scss */
-.view-mode-vm_1 .field-name-calendar {
-  position: absolute;
-  box-sizing: border-box;
-  padding: !important;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-/* line 11, ../sass/components/_view-mode_mode-1.scss */
+/* line 14, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .perfile-wrapper .field-name-ds-user-picture {
   border: 5px solid #98ACC0;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
 }
-/* line 23, ../sass/components/_view-mode_mode-1.scss */
+@media screen and (min-width: 1520px) {
+  /* line 14, ../sass/components/_view-mode_mode-1.scss */
+  .view-mode-vm_1 .perfile-wrapper .field-name-ds-user-picture {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1519px) {
+  /* line 14, ../sass/components/_view-mode_mode-1.scss */
+  .view-mode-vm_1 .perfile-wrapper .field-name-ds-user-picture {
+    max-width: 120px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 14, ../sass/components/_view-mode_mode-1.scss */
+  .view-mode-vm_1 .perfile-wrapper .field-name-ds-user-picture {
+    max-width: 85px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 14, ../sass/components/_view-mode_mode-1.scss */
+  .view-mode-vm_1 .perfile-wrapper .field-name-ds-user-picture {
+    max-width: 85px;
+  }
+}
+/* line 27, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .content-wrapper {
   position: relative;
   box-sizing: border-box;
@@ -3811,7 +3857,7 @@ body.sidebar-first #page #main #content {
   background: #ffffff;
   margin: 10px;
 }
-/* line 32, ../sass/components/_view-mode_mode-1.scss */
+/* line 36, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .content-wrapper:after {
   content: "";
   display: block;
@@ -3825,7 +3871,7 @@ body.sidebar-first #page #main #content {
   z-index: -1;
 }
 
-/* line 46, ../sass/components/_view-mode_mode-1.scss */
+/* line 50, ../sass/components/_view-mode_mode-1.scss */
 li.views-row {
   display: block;
 }
@@ -3914,14 +3960,41 @@ li.views-row {
   padding: 0;
 }
 
-/* line 13, ../sass/components/_views-block_time-line.scss */
+@media screen and (min-width: 1520px) {
+  /* line 13, ../sass/components/_views-block_time-line.scss */
+  .field-name-calendar {
+    position: absolute;
+    box-sizing: border-box;
+    padding: !important;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (max-width: 1519px) {
+  /* line 13, ../sass/components/_views-block_time-line.scss */
+  .field-name-calendar {
+    position: absolute;
+    box-sizing: border-box;
+    padding: !important;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 0px;
+  }
+}
+
+/* line 23, ../sass/components/_views-block_time-line.scss */
 .timeLine {
   position: relative;
   box-sizing: border-box;
   border-top: 5px solid #98ACC0;
   border-bottom: 5px solid #98ACC0;
 }
-/* line 19, ../sass/components/_views-block_time-line.scss */
+/* line 29, ../sass/components/_views-block_time-line.scss */
 .timeLine .timeLine-bar {
   position: absolute;
   box-sizing: border-box;
@@ -3939,7 +4012,7 @@ li.views-row {
   max-height: 100%;
   background: #98ACC0;
 }
-/* line 28, ../sass/components/_views-block_time-line.scss */
+/* line 38, ../sass/components/_views-block_time-line.scss */
 .timeLine .timeLine-group {
   position: relative;
   display: -webkit-flex;
@@ -3948,7 +4021,7 @@ li.views-row {
   -ms-justify-content: center;
   justify-content: center;
 }
-/* line 33, ../sass/components/_views-block_time-line.scss */
+/* line 43, ../sass/components/_views-block_time-line.scss */
 .timeLine .timeLine-group:before {
   content: "";
   display: block;
@@ -3966,7 +4039,7 @@ li.views-row {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 44, ../sass/components/_views-block_time-line.scss */
+/* line 54, ../sass/components/_views-block_time-line.scss */
 .timeLine .timeLine-group .timeLine-group-content {
   position: relative;
   z-index: 1;

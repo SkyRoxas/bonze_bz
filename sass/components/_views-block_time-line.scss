@@ -9,6 +9,16 @@
         }
     }
 }
+//calendar
+.field-name-calendar {
+
+    @include rwd-screen(pc){
+      @include absolute-align(center,center);
+    }
+    @include rwd-screen(pad,phone){
+      @include absolute-align(center,top);
+    }
+}
 
 .timeLine {
     position: relative;
