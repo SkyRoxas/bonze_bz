@@ -27,7 +27,8 @@ jQuery(document).ready(function($) {
         $endItem = '#footer';
         $endItemOffset = $($endItem).offset();
 
-        $(window).scroll(function() {
+
+        function scrollPosition() {
             if ($(window).scrollTop() > $($startItem).innerHeight() + $startItemOffset.top && $(window).scrollTop() < $endItemOffset.top - $(window).height()) {
                 $($scrollFixedItem).css({
                     'position': 'fixed',
@@ -37,9 +38,9 @@ jQuery(document).ready(function($) {
                     'position': 'absolute',
                 })
             }
-        })
+        }
 
-        $(window).scroll(function() {
+        function scrollOffset() {
             if ($(window).scrollTop() < $endItemOffset.top - $(window).height()) {
                 $($scrollFixedItem).css({
                     'top': '0',
@@ -51,26 +52,41 @@ jQuery(document).ready(function($) {
                     'bottom': '0',
                 })
             }
+        }
+
+        $(window).scroll(function() {
+            scrollPosition();
         })
 
+        $(window).scroll(function() {
+            scrollOffset();
+        })
 
-
+        $(document).ready(function() {
+            scrollPosition();
+        })
+        $(document).ready(function() {
+            scrollOffset();
+        })
     }
 
 
-    $(document).ready(function() {
-        scroll_fixed_lock('.region-sidebar-first');
-    })
+
+
+
+    scroll_fixed_lock('.region-sidebar-first');
 
     setTimeout(function() {
         scroll_fixed_lock('.region-sidebar-first');
-    }, 1000);
-
+    }, 1500);
 
 
     $(window).resize(function() {
         scroll_fixed_lock('.region-sidebar-first');
     });
+
+
+
 
     //防呆 disqus 後面 loading出的高
     setTimeout(function() {

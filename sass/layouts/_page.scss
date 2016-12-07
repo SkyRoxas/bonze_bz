@@ -4,7 +4,7 @@ body.sidebar-first {
             @include display-flex;
             #content {
               @include flex-scale(1);
-              padding: 40px;
+              padding: 40px 80px;
               box-sizing: border-box;
             }
             .sidebars {

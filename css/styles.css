@@ -3751,7 +3751,7 @@ body.sidebar-first #page #main #content {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 40px;
+  padding: 40px 80px;
   box-sizing: border-box;
 }
 
@@ -3907,18 +3907,22 @@ li.views-row {
 
 /* line 3, ../sass/components/_views-block_time-line.scss */
 .views-block_time-line .view > .view-content .item-list {
-  padding: 40px 0;
+  padding: 80px 0;
+}
+/* line 6, ../sass/components/_views-block_time-line.scss */
+.views-block_time-line .view > .view-content .item-list > ul {
+  padding: 0;
 }
 
-/* line 9, ../sass/components/_views-block_time-line.scss */
+/* line 13, ../sass/components/_views-block_time-line.scss */
 .timeLine {
   position: relative;
   box-sizing: border-box;
   border-top: 5px solid #98ACC0;
   border-bottom: 5px solid #98ACC0;
 }
-/* line 15, ../sass/components/_views-block_time-line.scss */
-.timeLine .timeline-bar {
+/* line 19, ../sass/components/_views-block_time-line.scss */
+.timeLine .timeLine-bar {
   position: absolute;
   box-sizing: border-box;
   padding: !important;
@@ -3930,10 +3934,48 @@ li.views-row {
   -o-transition: 1s;
   -webkit-transition: 1s;
   transition: 1s;
-  height: 0px;
+  height: 0;
   width: 5px;
   max-height: 100%;
   background: #98ACC0;
+}
+/* line 28, ../sass/components/_views-block_time-line.scss */
+.timeLine .timeLine-group {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+/* line 33, ../sass/components/_views-block_time-line.scss */
+.timeLine .timeLine-group:before {
+  content: "";
+  display: block;
+  width: 85%;
+  max-width: 500px;
+  height: 2px;
+  border-radius: 20px;
+  background: #98ACC0;
+  position: absolute;
+  box-sizing: border-box;
+  padding: !important;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 44, ../sass/components/_views-block_time-line.scss */
+.timeLine .timeLine-group .timeLine-group-content {
+  position: relative;
+  z-index: 1;
+  color: #98ACC0;
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  padding: 50px;
+  background: #ffffff;
 }
 
 /* SMACSS theme rules */
