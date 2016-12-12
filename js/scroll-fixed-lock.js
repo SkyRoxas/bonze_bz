@@ -63,18 +63,15 @@ jQuery(document).ready(function($) {
 
         $(window).scroll(function() {
             scrollPosition();
-        })
-
-        $(window).scroll(function() {
             scrollOffset();
         })
+
 
         $(document).ready(function() {
             scrollPosition();
-        })
-        $(document).ready(function() {
             scrollOffset();
         })
+
     }
 
     //執行fscroll_fixed_lock function
@@ -150,18 +147,14 @@ jQuery(document).ready(function($) {
 
         $(window).scroll(function() {
             scrollPositionNav();
-        })
-
-        $(window).scroll(function() {
             scrollOffsetNav();
         })
 
         $(document).ready(function() {
             scrollPositionNav();
+              scrollOffsetNav();
         })
-        $(document).ready(function() {
-            scrollOffsetNav();
-        })
+
 
 
         //toggle click function
