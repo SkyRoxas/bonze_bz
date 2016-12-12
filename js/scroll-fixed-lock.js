@@ -122,6 +122,46 @@ jQuery(document).ready(function($) {
             'z-index': '10',
         });
 
+        function scrollPositionNav() {
+            if ($(window).scrollTop() > $($startItem).innerHeight() + $startItemOffset.top && $(window).scrollTop() < $endItemOffset.top - $('.sidebarNav_button').innerHeight()) {
+                $('.sidebarNav_button').css({
+                    'position': 'fixed',
+                })
+            } else {
+                $('.sidebarNav_button').css({
+                    'position': 'absolute',
+                })
+            }
+        }
+
+        function scrollOffsetNav() {
+            if ($(window).scrollTop() < $endItemOffset.top - $('.sidebarNav_button').innerHeight()) {
+                $('.sidebarNav_button').css({
+                    'top': '0',
+                    'bottom': 'auto',
+                })
+            } else {
+                $('.sidebarNav_button').css({
+                    'top': 'auto',
+                    'bottom': '0',
+                })
+            }
+        }
+
+        $(window).scroll(function() {
+            scrollPositionNav();
+        })
+
+        $(window).scroll(function() {
+            scrollOffsetNav();
+        })
+
+        $(document).ready(function() {
+            scrollPositionNav();
+        })
+        $(document).ready(function() {
+            scrollOffsetNav();
+        })
 
 
         //toggle click function
