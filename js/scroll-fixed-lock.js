@@ -103,11 +103,6 @@ jQuery(document).ready(function($) {
         $sidebars = '.region-sidebar-first';
         $content = '#content';
 
-        $($content).before('<div class ="sidebarNav_button">nav</div>');
-        $('.sidebarNav_button').css({
-            'position': 'fixed',
-            'z-index': '10',
-        });
 
         $($parent).css({
             'position': 'relative',
@@ -120,9 +115,31 @@ jQuery(document).ready(function($) {
         });
 
 
+        //sidebarNav_button style
+        $($content).before('<div class ="sidebarNav_button">nav</div>');
+        $('.sidebarNav_button').css({
+            'position': 'fixed',
+            'z-index': '10',
+        });
+
+
 
         //toggle click function
+
+
         var i = 0;
+
+        //responsive 切換時,防呆
+        $(window).resize(function() {
+            if ($(window).width() > 1200) {
+                i = 0;
+                $($content).css({
+                    'left': '0',
+                })
+            }
+        })
+
+
         $('.sidebarNav_button').click(function() {
 
             //sidebars animate
