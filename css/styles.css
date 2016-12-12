@@ -3753,9 +3753,9 @@ body.sidebar-first #page #main > * {
 /* line 10, ../sass/layouts/_page.scss */
 body.sidebar-first #page #main #content {
   position: relative;
+  background: #ffffff;
   display: block;
   box-sizing: border-box;
-  background: #ffffff;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -3777,8 +3777,8 @@ body.sidebar-first #page #main #content {
 #footer {
   background: #98ACC0;
   color: #ffffff;
+  position: relative;
   z-index: 1;
-  height: 1000px;
   display: block;
 }
 
@@ -3832,7 +3832,7 @@ body.sidebar-first #page #main #content {
     box-sizing: border-box;
   }
 }
-/* line 14, ../sass/components/_view-mode_mode-1.scss */
+/* line 11, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .perfile-wrapper .field-name-ds-user-picture {
   border: 5px solid #98ACC0;
   border-radius: 50%;
@@ -3840,54 +3840,59 @@ body.sidebar-first #page #main #content {
   overflow: hidden;
 }
 @media screen and (min-width: 1520px) {
-  /* line 14, ../sass/components/_view-mode_mode-1.scss */
+  /* line 11, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .perfile-wrapper .field-name-ds-user-picture {
     max-width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1519px) {
-  /* line 14, ../sass/components/_view-mode_mode-1.scss */
+  /* line 11, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .perfile-wrapper .field-name-ds-user-picture {
     max-width: 120px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 14, ../sass/components/_view-mode_mode-1.scss */
+  /* line 11, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .perfile-wrapper .field-name-ds-user-picture {
     max-width: 85px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 14, ../sass/components/_view-mode_mode-1.scss */
+  /* line 11, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .perfile-wrapper .field-name-ds-user-picture {
     max-width: 85px;
   }
 }
-/* line 27, ../sass/components/_view-mode_mode-1.scss */
+/* line 25, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .content-wrapper {
+  position: relative;
+}
+/* line 28, ../sass/components/_view-mode_mode-1.scss */
+.view-mode-vm_1 .content-wrapper:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  right: 0px;
+  bottom: -8px;
+  background: #DCDCDC;
+  border-radius: 20px;
+  z-index: 1;
+}
+/* line 40, ../sass/components/_view-mode_mode-1.scss */
+.view-mode-vm_1 .content-wrapper > .wrapper {
   position: relative;
   box-sizing: border-box;
   border: 2px solid #98ACC0;
   border-radius: 20px;
   padding: 20px 25px;
   background: #ffffff;
-  margin: 10px;
-}
-/* line 36, ../sass/components/_view-mode_mode-1.scss */
-.view-mode-vm_1 .content-wrapper:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  right: -8px;
-  bottom: -10px;
-  background: #DCDCDC;
-  border-radius: 20px;
-  z-index: -1;
+  margin: 0px 5px 8px 0px;
+  z-index: 2;
 }
 
-/* line 50, ../sass/components/_view-mode_mode-1.scss */
+/* line 53, ../sass/components/_view-mode_mode-1.scss */
 li.views-row {
   display: block;
 }
@@ -3902,19 +3907,43 @@ li.views-row {
 .tagclouds-block_tagclouds-1 h2.block__title {
   display: block;
   box-sizing: border-box;
-  padding: 5px 40px;
 }
-/* line 7, ../sass/components/_tagclouds-block_tagclouds-1.scss */
+@media screen and (min-width: 480px) {
+  /* line 2, ../sass/components/_tagclouds-block_tagclouds-1.scss */
+  .tagclouds-block_tagclouds-1 h2.block__title {
+    padding: 5px 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 2, ../sass/components/_tagclouds-block_tagclouds-1.scss */
+  .tagclouds-block_tagclouds-1 h2.block__title {
+    padding: 5px 20px;
+    font-size: 20px;
+  }
+}
+/* line 14, ../sass/components/_tagclouds-block_tagclouds-1.scss */
 .tagclouds-block_tagclouds-1 span {
   display: block;
 }
-/* line 9, ../sass/components/_tagclouds-block_tagclouds-1.scss */
+/* line 17, ../sass/components/_tagclouds-block_tagclouds-1.scss */
 .tagclouds-block_tagclouds-1 span a.tagclouds {
-  font-size: 1.2em;
   display: block;
   width: 100%;
-  padding: 10px 80px;
   box-sizing: border-box;
+}
+@media screen and (min-width: 480px) {
+  /* line 17, ../sass/components/_tagclouds-block_tagclouds-1.scss */
+  .tagclouds-block_tagclouds-1 span a.tagclouds {
+    padding: 10px 80px;
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 17, ../sass/components/_tagclouds-block_tagclouds-1.scss */
+  .tagclouds-block_tagclouds-1 span a.tagclouds {
+    padding: 10px 40px;
+    font-size: 1em;
+  }
 }
 
 /* line 2, ../sass/components/_calendar_mode-1.scss */
@@ -4065,6 +4094,40 @@ li.views-row {
   text-align: center;
   padding: 50px;
   background: #ffffff;
+}
+
+/* line 1, ../sass/components/_js_scroll-fixed-lock.scss */
+.sidebarNav_button {
+  box-sizing: border-box;
+  padding: 20px;
+}
+/* line 5, ../sass/components/_js_scroll-fixed-lock.scss */
+.sidebarNav_button a {
+  box-sizing: border-box;
+  padding: 20px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #98ACC0;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #98ACC0;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  opacity: 0.4;
+}
+/* line 18, ../sass/components/_js_scroll-fixed-lock.scss */
+.sidebarNav_button a:hover {
+  opacity: 1;
 }
 
 /* SMACSS theme rules */

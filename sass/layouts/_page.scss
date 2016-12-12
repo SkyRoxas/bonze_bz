@@ -9,9 +9,9 @@ body.sidebar-first {
 
             #content {
                 position: relative;
+                background: #ffffff;
                 display: block;
                 box-sizing: border-box;
-                background: #ffffff;
                 @include flex-scale(1);
                 @include rwd-screen(pc,pad) {
                     padding: 40px 80px 80px;
@@ -22,7 +22,9 @@ body.sidebar-first {
             }
 
             .sidebars {
-                .region-sidebar-first {}
+                .region-sidebar-first {
+                
+                }
             }
         }
     }

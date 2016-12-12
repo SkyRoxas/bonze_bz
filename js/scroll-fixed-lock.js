@@ -3,7 +3,10 @@ jQuery(document).ready(function($) {
     $('#content').css('minHeight', $(window).height());
 
 
+    //sidebar lock
     function scroll_fixed_lock($scrollFixedItem) {
+
+        //style
         $($scrollFixedItem).css('maxHeight', $(window).height());
         $($scrollFixedItem).parent().parent().css({
             'position': 'relative',
@@ -16,6 +19,16 @@ jQuery(document).ready(function($) {
             'height': '100%',
             'overflow-y': 'scroll',
         })
+
+        if ($($scrollFixedItem).innerHeight() > $(window).width()) {
+            $($scrollFixedItem).css({
+                'width': "70%",
+            })
+        } else {
+            $($scrollFixedItem).css({
+                'width': "auto",
+            })
+        }
 
 
         if ($(window).width() > 1200) {
@@ -94,6 +107,11 @@ jQuery(document).ready(function($) {
     }, 2500);
 
 
+
+
+
+
+
     //sidebarNav button
     function sidebarNav() {
         $parent = '#main';
@@ -113,46 +131,31 @@ jQuery(document).ready(function($) {
 
 
         //sidebarNav_button style
-        $($content).before('<div class ="sidebarNav_button">nav</div>');
+        $($content).prepend('<div class ="sidebarNav_button"><a href ="javascript:;">></a></div>');
         $('.sidebarNav_button').css({
-            'position': 'fixed',
+            'position': 'absolute',
             'z-index': '10',
+            'left': '0',
         });
 
-        function scrollPositionNav() {
-            if ($(window).scrollTop() > $($startItem).innerHeight() + $startItemOffset.top && $(window).scrollTop() < $endItemOffset.top - $('.sidebarNav_button').innerHeight()) {
-                $('.sidebarNav_button').css({
-                    'position': 'fixed',
-                })
-            } else {
-                $('.sidebarNav_button').css({
-                    'position': 'absolute',
-                })
-            }
-        }
 
+        //sidebarNav_button top animate
         function scrollOffsetNav() {
-            if ($(window).scrollTop() < $endItemOffset.top - $('.sidebarNav_button').innerHeight()) {
-                $('.sidebarNav_button').css({
-                    'top': '0',
-                    'bottom': 'auto',
-                })
-            } else {
-                $('.sidebarNav_button').css({
-                    'top': 'auto',
-                    'bottom': '0',
-                })
+            if ($(window).scrollTop() + $($startItem).innerHeight() + $startItemOffset.top < $('#main').innerHeight()) {
+                $('.sidebarNav_button').animate({
+                    'top': $(window).scrollTop() + 40,
+                }, 35)
             }
         }
 
         $(window).scroll(function() {
-            scrollPositionNav();
+
             scrollOffsetNav();
         })
 
         $(document).ready(function() {
-            scrollPositionNav();
-              scrollOffsetNav();
+
+            scrollOffsetNav();
         })
 
 
@@ -174,7 +177,6 @@ jQuery(document).ready(function($) {
 
 
         $('.sidebarNav_button').click(function() {
-
             //sidebars animate
 
             if (i % 2 == 0) {
@@ -201,18 +203,6 @@ jQuery(document).ready(function($) {
                 }
 
             }
-
-            //sidebarNav_button animate
-            if (i % 2 == 0) {
-
-
-
-            } else {
-
-
-            }
-
-
             i++;
         })
     }

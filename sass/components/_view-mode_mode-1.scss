@@ -1,15 +1,12 @@
 .view-mode-vm_1 {
     position: relative;
-
-    @include rwd-screen(pc){
-      @include child-margin(180px,0px);
+    @include rwd-screen(pc) {
+         @include child-margin(180px,0px);
     }
-    @include rwd-screen(pad,phone){
-      @include child-margin(40px,0px);
+    @include rwd-screen(pad,phone) {
+         @include child-margin(40px,0px);
     }
-
-
-//perfile info
+    //perfile info
     .perfile-wrapper {
         .field-name-ds-user-picture {
             border: 5px solid #98ACC0;
@@ -23,26 +20,32 @@
             //display: none;
         }
     }
-//artcle info
+    //artcle info
+
     .content-wrapper {
         position: relative;
-        box-sizing: border-box;
-        border: 2px solid #98ACC0;
-        border-radius: 20px;
-        padding: 20px 25px;
-        background: #ffffff;
-        margin: 10px;
 
         &:after {
             content: "";
             display: block;
             position: absolute;
-            @include size(100%);
-            right: -8px;
-            bottom: -10px;
+            @include size(98%);
+            right: 0px;
+            bottom: -8px;
             background: #DCDCDC;
             border-radius: 20px;
-            z-index: -1;
+            z-index: 1;
+        }
+
+        > .wrapper {
+            position: relative;
+            box-sizing: border-box;
+            border: 2px solid #98ACC0;
+            border-radius: 20px;
+            padding: 20px 25px;
+            background: #ffffff;
+            margin: 0px 5px 8px 0px;
+            z-index: 2;
         }
     }
 }
