@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
             })
         )
 
-        $startItem = '#header';
+        $startItem = '.header:not(".scroll_header")';
         $startItemOffset = $($startItem).offset();
 
         $endItem = '#footer';

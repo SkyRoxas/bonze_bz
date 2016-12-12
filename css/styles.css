@@ -3729,9 +3729,14 @@ body .margin-bottom-lg {
 }
 /* line 1, ../sass/layouts/_header.scss */
 #header {
+  position: relative;
+  z-index: 20;
+  background: #ffffff;
+  display: block;
+  width: 100%;
   border-bottom: 1px solid #E8E9EB;
 }
-/* line 3, ../sass/layouts/_header.scss */
+/* line 8, ../sass/layouts/_header.scss */
 #header .region-wrapper {
   display: -webkit-flex;
   display: flex;
@@ -3780,6 +3785,21 @@ body.sidebar-first #page #main #content {
   position: relative;
   z-index: 1;
   display: block;
+}
+
+/* line 1, ../sass/layouts/_header_scroll.scss */
+.scroll_header {
+  position: fixed !important;
+  top: -20% !important;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+/* line 6, ../sass/layouts/_header_scroll.scss */
+.scroll_header_show {
+  top: 0% !important;
 }
 
 @media screen and (min-width: 1520px) {
