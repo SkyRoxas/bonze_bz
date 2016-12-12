@@ -3778,6 +3778,8 @@ body.sidebar-first #page #main #content {
   background: #98ACC0;
   color: #ffffff;
   z-index: 1;
+  height: 1000px;
+  display: block;
 }
 
 /* line 2, ../sass/components/_menu-block_menu-1.scss */
