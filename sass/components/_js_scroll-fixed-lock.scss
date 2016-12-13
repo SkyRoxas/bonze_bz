@@ -1,7 +1,8 @@
 .sidebarNav_button{
 box-sizing: border-box;
 padding: 20px;
-
+@include transition(1s);
+top: 0px;
   a{
     box-sizing: border-box;
     padding: 20px;

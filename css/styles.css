@@ -4368,8 +4368,13 @@ li.views-row {
 .sidebarNav_button {
   box-sizing: border-box;
   padding: 20px;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
+  top: 0px;
 }
-/* line 5, ../sass/components/_js_scroll-fixed-lock.scss */
+/* line 6, ../sass/components/_js_scroll-fixed-lock.scss */
 .sidebarNav_button a {
   box-sizing: border-box;
   padding: 20px;
@@ -4393,9 +4398,19 @@ li.views-row {
   transition: 0.6s;
   opacity: 0.4;
 }
-/* line 18, ../sass/components/_js_scroll-fixed-lock.scss */
+/* line 19, ../sass/components/_js_scroll-fixed-lock.scss */
 .sidebarNav_button a:hover {
   opacity: 1;
+}
+
+/* line 1, ../sass/components/_js_scroll-state-bar.scss */
+.scroll_state_bar {
+  opacity: 0;
+  width: 0;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 /* SMACSS theme rules */

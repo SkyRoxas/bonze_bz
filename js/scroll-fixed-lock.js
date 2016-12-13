@@ -142,9 +142,9 @@ jQuery(document).ready(function($) {
         //sidebarNav_button top animate
         function scrollOffsetNav() {
             if ($(window).scrollTop() + $($startItem).innerHeight() + $startItemOffset.top < $('#main').innerHeight()) {
-                $('.sidebarNav_button').animate({
+                $('.sidebarNav_button').css({
                     'top': $(window).scrollTop() + 40,
-                }, 35)
+                })
             }
         }
 
