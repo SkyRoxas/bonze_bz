@@ -1,29 +1,33 @@
 .calendar_mode-1 {
+    position: relative;
+    display: block;
+    width: 110px;
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        @include size(100%);
+        background: #DCDCDC;
+        top: 5px;
+        left: -4px;
+        z-index: 1;
+        border-radius: 5px;
+    }
+
     .wrapper {
         position: relative;
+        z-index: 2;
         display: block;
-        width: 110px;
-
-
-        &:after {
-            content: "";
-            display: block;
-            position: absolute;
-            @include size(100%);
-            background: #DCDCDC;
-            top: 5px;
-            left: -4px;
-            z-index: -1;
-            border-radius: 5px;
-        }
 
         .month {
             display: block;
-            background: #98ACC0;
+            background: get-bg-color(m1);
             padding: 10px 8px 5px;
             color: #ffffff;
             font-size: 15px;
             position: relative;
+
             &:after {
                 content: "";
                 display: block;
@@ -43,7 +47,6 @@
             font-size: 25px;
             border: 1px solid #e8e9eb;
             border-top: none;
-
         }
     }
 }

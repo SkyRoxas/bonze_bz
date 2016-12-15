@@ -22,8 +22,10 @@ body.sidebar-first {
             }
 
             .sidebars {
+              @include rwd-screen(phone){
+                width: 0px;
+              }
                 .region-sidebar-first {
-                
                 }
             }
         }

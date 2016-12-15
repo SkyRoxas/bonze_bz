@@ -52,7 +52,7 @@
             overflow: hidden;
 
             .menu__item {
-                @include transition(0.8s);
+                @include transition(0.5s);
                 position: relative;
                 right: 100%;
                 opacity: 0;

@@ -135,23 +135,42 @@ function bonze_bs_preprocess_node(&$variables, $hook){
 
   if($variables['view_mode']=='vm_1'){
 
-    $colClass1 ="col-lg-6 col-md-6 col-xs-12";
+    $colClass1 ="col-lg col-md col-xs-12";
 
       //dpm($variables);
-        $variables['content']['calendar']['#prefix']='<div class ="row wrapper">';
-        $variables['content']['ds_user_picture']['#prefix']='<div class ="field-perfile col-xs-6 flex-end-col"><div class ="perfile-wrapper wrapper">';
+        $variables['content']['calendar']['#prefix']='<div class ="row wrapper center-xs">';
+        $variables['content']['ds_user_picture']['#prefix']='<div class ="field-perfile '.$colClass1.'"><div class ="perfile-wrapper wrapper">';
         $variables['content']['author']['#suffix']='</div></div>';
         $variables['content']['title']['#prefix']='<div class ="field-content'.$colClass1.'"><div class ="content-wrapper wrapper"><div class ="wrapper">';
         $variables['content']['field_like']['#suffix']='</div></div></div></div>';
 
         if($variables['zebra'] == "odd"){
-          $variables['content']['ds_user_picture']['#prefix']='<div class ="field-perfile col-xs-6 row end-lg end-md start-xs middle-xs"><div class ="perfile-wrapper wrapper">';
-          $variables['content']['title']['#prefix']='<div class ="field-content '.$colClass1.'"><div class ="content-wrapper wrapper"><div class ="wrapper">';
+          $variables['content']['ds_user_picture']['#prefix']='<div class ="field-perfile  first-lg first-md '.$colClass1.' row end-lg end-md center-xs middle-xs"><div class ="perfile-wrapper wrapper">';
+          $variables['content']['title']['#prefix']='<div class ="field-content last-xs '.$colClass1.'"><div class ="content-wrapper wrapper"><div class ="wrapper">';
         }
         if($variables['zebra'] == "even"){
-          $variables['content']['calendar']['#prefix']='<div class ="row wrapper reverse">';
-          $variables['content']['ds_user_picture']['#prefix']='<div class ="field-perfile  col-xs-6 row start-lg start-md end-xs middle-xs"><div class ="perfile-wrapper wrapper">';
-          $variables['content']['title']['#prefix']='<div class ="field-content '.$colClass1.'"><div class ="content-wrapper wrapper"><div class ="wrapper">';
+          $variables['content']['ds_user_picture']['#prefix']='<div class ="field-perfile last-lg last-md'.$colClass1.' row start-lg start-md center-xs middle-xs "><div class ="perfile-wrapper wrapper">';
+          $variables['content']['title']['#prefix']='<div class ="field-content first-lg first-md last-xs '.$colClass1.'"><div class ="content-wrapper wrapper"><div class ="wrapper">';
         }
+  }
+
+  if($variables['view_mode']=='vm_2'){
+
+    $colClass1 ="col-lg col-md col-xs-12";
+
+      //dpm($variables);
+        $variables['content']['ds_user_picture']['#prefix']='<div class ="row wrapper center-xs"><div class ="field-perfile"><div class ="perfile-wrapper wrapper">';
+        $variables['content']['author']['#suffix']='</div></div>';
+        $variables['content']['title']['#prefix']='<div class ="field-content '.$colClass1.'"><div class ="content-wrapper wrapper"><div class ="wrapper">';
+        $variables['content']['field_like']['#suffix']='</div></div></div></div>';
+
+        // if($variables['zebra'] == "odd"){
+        //   $variables['content']['ds_user_picture']['#prefix']='<div class ="field-perfile  first-lg first-md '.$colClass1.' row end-lg end-md center-xs middle-xs"><div class ="perfile-wrapper wrapper">';
+        //   $variables['content']['title']['#prefix']='<div class ="field-content last-xs '.$colClass1.'"><div class ="content-wrapper wrapper"><div class ="wrapper">';
+        // }
+        // if($variables['zebra'] == "even"){
+        //   $variables['content']['ds_user_picture']['#prefix']='<div class ="field-perfile last-lg last-md'.$colClass1.' row start-lg start-md center-xs middle-xs "><div class ="perfile-wrapper wrapper">';
+        //   $variables['content']['title']['#prefix']='<div class ="field-content first-lg first-md last-xs '.$colClass1.'"><div class ="content-wrapper wrapper"><div class ="wrapper">';
+        // }
   }
 }

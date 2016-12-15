@@ -10,29 +10,21 @@
     }
 }
 //calendar
-.field-name-calendar {
 
-    @include rwd-screen(pc){
-      @include absolute-align(center,center);
-    }
-    @include rwd-screen(pad,phone){
-      @include absolute-align(center,top);
-    }
-}
 
 .timeLine {
     position: relative;
     box-sizing: border-box;
-    border-top: 5px solid #98ACC0;
-    border-bottom: 5px solid #98ACC0;
+    border-top: 5px solid get-bg-color(m1);
+    border-bottom: 5px solid get-bg-color(m1);
 
     .timeLine-bar {
         @include absolute-align(center,left);
-        @include transition(1s);
+        @include transition(0.4s);
         height: 0;
         width: 5px;
         max-height: 100%;
-        background: #98ACC0;
+        background: get-bg-color(m1);
     }
 
     .timeLine-group {
@@ -47,15 +39,15 @@
             max-width: 500px;
             height: 2px;
             border-radius: 20px;
-            background: #98ACC0;
+            background: get-bg-color(m1);
             @include absolute-align(center,center);
         }
 
         .timeLine-group-content {
             position: relative;
             z-index: 1;
-            color: #98ACC0;
-            font-size: 50px;
+            color: get-bg-color(m1);
+            font-size: 30px;
             display: block;
             text-align: center;
             padding: 50px;

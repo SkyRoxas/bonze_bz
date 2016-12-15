@@ -183,11 +183,11 @@ jQuery(document).ready(function($) {
                 if ($(window).width() > 1200) {
                     $($sidebars).parent().animate({
                         'width': '0',
-                    })
+                    },300)
                 } else {
                     $($content).animate({
                         'left': $('.region-sidebar-first').innerWidth(),
-                    })
+                    },300)
                 }
 
 
@@ -195,11 +195,11 @@ jQuery(document).ready(function($) {
                 if ($(window).width() > 1200) {
                     $($sidebars).parent().animate({
                         'width': $('.region-sidebar-first').width(),
-                    })
+                    },300)
                 } else {
                     $($content).animate({
                         'left': '0',
-                    })
+                    },300)
                 }
 
             }

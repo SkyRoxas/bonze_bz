@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
     var responsive_menu = $menu + ".responsive-menu";
     //nav click事件
     $(nav_button).click(function() {
-      $(responsive_menu).fadeToggle('slow');
+      $(responsive_menu).fadeToggle();
       $(nav_button).toggleClass('click');
       delay_addclass_child(responsive_menu, 'li.menu__item', 150);
     });
