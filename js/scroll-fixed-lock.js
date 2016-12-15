@@ -104,7 +104,7 @@ jQuery(document).ready(function($) {
         if ($('#disqus_thread').length > 0) {
             scroll_fixed_lock('.region-sidebar-first');
         }
-    }, 2500);
+    }, 5000);
 
 
 

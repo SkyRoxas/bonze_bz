@@ -4,7 +4,10 @@ jQuery(document).ready(function($) {
 
 
     function scrollStateBar() {
-        $('body').prepend('<div class ="scroll_state_bar"></div>');
+        if ($('.scroll_state_bar').length == 0) {
+            $('body').prepend('<div class ="scroll_state_bar"></div>');
+        }
+
         $('.scroll_state_bar').css({
             'position': 'fixed',
             'z-index': '100',
@@ -16,16 +19,16 @@ jQuery(document).ready(function($) {
         $widthPersent = $width + '%';
 
 
-        if($(window).scrollTop() == 0){
-          $('.scroll_state_bar').css({
-              'width': '0',
-              'opacity':'0',
-          })
-        }else {
-          $('.scroll_state_bar').css({
-              'width': $widthPersent,
-              'opacity':'0.8',
-          })
+        if ($(window).scrollTop() == 0) {
+            $('.scroll_state_bar').css({
+                'width': '0',
+                'opacity': '0',
+            })
+        } else {
+            $('.scroll_state_bar').css({
+                'width': $widthPersent,
+                'opacity': '0.8',
+            })
         }
 
     }
