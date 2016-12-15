@@ -14,10 +14,10 @@ body.sidebar-first {
                 box-sizing: border-box;
                 @include flex-scale(1);
                 @include rwd-screen(pc,pad) {
-                    padding: 40px 80px 80px;
+                    padding: 40px 80px;
                 }
                 @include rwd-screen(small-pad,phone) {
-                    padding: 80px 20px;
+                    padding: 40px 20px;
                 }
             }
 

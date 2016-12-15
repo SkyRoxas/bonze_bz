@@ -6,28 +6,9 @@
     @include rwd-screen(pad,phone) {
          @include child-margin(40px,10px);
     }
-    .field-name-calendar{
-      @include display-flex;
-      @include justify-content(center);
-      @include align-items(center);
-    }
     //perfile info
-    .perfile-wrapper {
-        .field-name-ds-user-picture {
-            border: 5px solid #98ACC0;
-            border-radius: 50%;
-            position: relative;
-            overflow: hidden;
-            @include rwd-coding(max-width,100%,120px,85px,60px);
-            @include rwd-coding(border-width,5px,5px,3px,2px);
-        }
-
-        .field-name-author {
-            //display: none;
-        }
-    }
+    .perfile-wrapper {}
     //artcle info
-
     .content-wrapper {
         position: relative;
 
@@ -36,7 +17,7 @@
             display: block;
             position: absolute;
             @include size(98%);
-            right: 0px;
+            right: 0;
             bottom: -8px;
             background: #DCDCDC;
             border-radius: 20px;
@@ -50,8 +31,31 @@
             border-radius: 20px;
             padding: 20px 25px;
             background: #ffffff;
-            margin: 0px 5px 8px 0px;
+            margin: 0 5px 8px 0;
             z-index: 2;
         }
+    }
+    //field
+    .field-name-calendar {
+        @include display-flex;
+        @include justify-content(center);
+        @include align-items(center);
+    }
+
+    .field-name-ds-user-picture {
+        border: 5px solid #98ACC0;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        @include rwd-coding(max-width,100%,120px,85px,60px);
+        @include rwd-coding(border-width,5px,5px,3px,2px);
+    }
+
+    .field-name-body {
+        padding: 20px 0px;
+    }
+
+    .field-name-author {
+        //display: none;
     }
 }

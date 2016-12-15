@@ -69,11 +69,13 @@
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
       <a id="main-content"></a>
+      <div class ="margin-bottom-block">
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
         <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php print $breadcrumb; ?>
+    </div>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>
