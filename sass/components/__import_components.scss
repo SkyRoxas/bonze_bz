@@ -1,5 +1,6 @@
 //menu-block
 @import "menu-block_menu-1";
+@import "menu-block_sitemap-menu-1";
 
 //view mode
 @import "view-mode_mode-1";
@@ -17,6 +18,9 @@
 
 //view
 @import "_views-block_time-line";
+
+//block
+@import "block_copyright";
 
 //js
 @import "_js_scroll-fixed-lock";
