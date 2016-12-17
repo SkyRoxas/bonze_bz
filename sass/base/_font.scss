@@ -52,6 +52,7 @@ h2 {
     padding-bottom: 10px;
 }
 
+.field-name-title h2,
 h3 {
     @include rwd-screen(pc,pad) {
         font-size: 24px;
@@ -82,4 +83,12 @@ h5 {
         font-size: 16px;
         list-style: 20px;
     }
+}
+
+a {
+    color: #6684A3;
+}
+
+a.more-link {
+    color: #ff6600;
 }

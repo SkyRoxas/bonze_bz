@@ -1,10 +1,11 @@
 .view-mode-vm_1 {
+    //mode layout---------------------------------------------------------------
     position: relative;
     @include rwd-screen(pc) {
          @include child-margin(40px,0px);
     }
     @include rwd-screen(pad,phone) {
-         @include child-margin(40px,10px);
+         @include child-margin(40px,15px);
     }
     //perfile info
     .perfile-wrapper {}
@@ -35,7 +36,7 @@
             z-index: 2;
         }
     }
-    //field
+    //field style---------------------------------------------------------------
     .field-name-calendar {
         @include display-flex;
         @include justify-content(center);
@@ -47,15 +48,60 @@
         border-radius: 50%;
         position: relative;
         overflow: hidden;
-        @include rwd-coding(max-width,100%,120px,85px,60px);
-        @include rwd-coding(border-width,5px,5px,3px,2px);
+        @include rwd-coding(max-width,100%,80px,60px,60px);
+        @include rwd-coding(border-width,5px,3px,3px,2px);
     }
 
     .field-name-body {
-        padding: 20px 0px;
+        box-sizing: border-box;
+        padding: 20px 0;
     }
 
     .field-name-author {
-        //display: none;
+        text-align: center;
+        padding: 10px;
+        @include rwd-coding(display,block,none,none,none);
+    }
+
+    .field-name-field-tag {
+        display: block;
+
+        .field-items {
+            @include display-flex;
+            @include flex-wrap(wrap);
+            @include justify-content(flex-end);
+
+            .field-item {
+                position: relative;
+                margin-top: 5px;
+                margin-bottom: 5px;
+
+                &:not(first-child) {
+                    margin-left: 10px;
+                }
+
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    @include size(100%);
+                    right: -3px;
+                    bottom: -3px;
+                    background: #DCDCDC;
+                    z-index: 1;
+                }
+
+                a {
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                    background: #ffffff;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    border: 1px solid;
+                    white-space: nowrap;
+                }
+            }
+        }
     }
 }

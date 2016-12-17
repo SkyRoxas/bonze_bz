@@ -3804,6 +3804,7 @@ h2 {
 
 @media screen and (min-width: 768px) {
   /* line 55, ../sass/base/_font.scss */
+  .field-name-title h2,
   h3 {
     font-size: 24px;
     line-height: 30px;
@@ -3811,6 +3812,7 @@ h2 {
 }
 @media screen and (max-width: 767px) {
   /* line 55, ../sass/base/_font.scss */
+  .field-name-title h2,
   h3 {
     font-size: 21px;
     line-height: 26px;
@@ -3818,32 +3820,42 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 66, ../sass/base/_font.scss */
+  /* line 67, ../sass/base/_font.scss */
   h4 {
     font-size: 21px;
     line-height: 26px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 66, ../sass/base/_font.scss */
+  /* line 67, ../sass/base/_font.scss */
   h4 {
     font-size: 18px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  /* line 76, ../sass/base/_font.scss */
+  /* line 77, ../sass/base/_font.scss */
   h5 {
     font-size: 18px;
     list-style: 23px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 76, ../sass/base/_font.scss */
+  /* line 77, ../sass/base/_font.scss */
   h5 {
     font-size: 16px;
     list-style: 20px;
   }
+}
+
+/* line 88, ../sass/base/_font.scss */
+a {
+  color: #6684A3;
+}
+
+/* line 92, ../sass/base/_font.scss */
+a.more-link {
+  color: #ff6600;
 }
 
 /* line 1, ../sass/base/_attribute.scss */
@@ -4470,19 +4482,19 @@ body.sidebar-first #page #main #content {
   }
   /* line 5, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
   .view-mode-vm_1 > * {
-    margin: -10px -40px;
+    margin: -15px -40px;
   }
   /* line 7, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
   .view-mode-vm_1 > * > * {
-    padding: 10px 40px;
+    padding: 15px 40px;
     box-sizing: border-box;
   }
 }
-/* line 12, ../sass/components/_view-mode_mode-1.scss */
+/* line 13, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .content-wrapper {
   position: relative;
 }
-/* line 15, ../sass/components/_view-mode_mode-1.scss */
+/* line 16, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .content-wrapper:after {
   content: "";
   display: block;
@@ -4495,7 +4507,7 @@ body.sidebar-first #page #main #content {
   border-radius: 20px;
   z-index: 1;
 }
-/* line 27, ../sass/components/_view-mode_mode-1.scss */
+/* line 28, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .content-wrapper > .wrapper {
   position: relative;
   box-sizing: border-box;
@@ -4506,7 +4518,7 @@ body.sidebar-first #page #main #content {
   margin: 0 5px 8px 0;
   z-index: 2;
 }
-/* line 39, ../sass/components/_view-mode_mode-1.scss */
+/* line 40, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .field-name-calendar {
   display: -webkit-flex;
   display: flex;
@@ -4517,7 +4529,7 @@ body.sidebar-first #page #main #content {
   -ms-align-items: center;
   align-items: center;
 }
-/* line 45, ../sass/components/_view-mode_mode-1.scss */
+/* line 46, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .field-name-ds-user-picture {
   border: 5px solid #98ACC0;
   border-radius: 50%;
@@ -4525,56 +4537,134 @@ body.sidebar-first #page #main #content {
   overflow: hidden;
 }
 @media screen and (min-width: 1520px) {
-  /* line 45, ../sass/components/_view-mode_mode-1.scss */
+  /* line 46, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-ds-user-picture {
     max-width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1519px) {
-  /* line 45, ../sass/components/_view-mode_mode-1.scss */
+  /* line 46, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-ds-user-picture {
-    max-width: 120px;
+    max-width: 80px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 45, ../sass/components/_view-mode_mode-1.scss */
+  /* line 46, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-ds-user-picture {
-    max-width: 85px;
+    max-width: 60px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 45, ../sass/components/_view-mode_mode-1.scss */
+  /* line 46, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-ds-user-picture {
     max-width: 60px;
   }
 }
 @media screen and (min-width: 1520px) {
-  /* line 45, ../sass/components/_view-mode_mode-1.scss */
+  /* line 46, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-ds-user-picture {
     border-width: 5px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1519px) {
-  /* line 45, ../sass/components/_view-mode_mode-1.scss */
+  /* line 46, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-ds-user-picture {
-    border-width: 5px;
+    border-width: 3px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 45, ../sass/components/_view-mode_mode-1.scss */
+  /* line 46, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-ds-user-picture {
     border-width: 3px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 45, ../sass/components/_view-mode_mode-1.scss */
+  /* line 46, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-ds-user-picture {
     border-width: 2px;
   }
 }
-/* line 54, ../sass/components/_view-mode_mode-1.scss */
+/* line 55, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .field-name-body {
-  padding: 20px 0px;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+/* line 60, ../sass/components/_view-mode_mode-1.scss */
+.view-mode-vm_1 .field-name-author {
+  text-align: center;
+  padding: 10px;
+}
+@media screen and (min-width: 1520px) {
+  /* line 60, ../sass/components/_view-mode_mode-1.scss */
+  .view-mode-vm_1 .field-name-author {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1519px) {
+  /* line 60, ../sass/components/_view-mode_mode-1.scss */
+  .view-mode-vm_1 .field-name-author {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 60, ../sass/components/_view-mode_mode-1.scss */
+  .view-mode-vm_1 .field-name-author {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 60, ../sass/components/_view-mode_mode-1.scss */
+  .view-mode-vm_1 .field-name-author {
+    display: none;
+  }
+}
+/* line 66, ../sass/components/_view-mode_mode-1.scss */
+.view-mode-vm_1 .field-name-field-tag {
+  display: block;
+}
+/* line 69, ../sass/components/_view-mode_mode-1.scss */
+.view-mode-vm_1 .field-name-field-tag .field-items {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+}
+/* line 74, ../sass/components/_view-mode_mode-1.scss */
+.view-mode-vm_1 .field-name-field-tag .field-items .field-item {
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* line 79, ../sass/components/_view-mode_mode-1.scss */
+.view-mode-vm_1 .field-name-field-tag .field-items .field-item:not(first-child) {
+  margin-left: 10px;
+}
+/* line 83, ../sass/components/_view-mode_mode-1.scss */
+.view-mode-vm_1 .field-name-field-tag .field-items .field-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -3px;
+  bottom: -3px;
+  background: #DCDCDC;
+  z-index: 1;
+}
+/* line 94, ../sass/components/_view-mode_mode-1.scss */
+.view-mode-vm_1 .field-name-field-tag .field-items .field-item a {
+  display: block;
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid;
+  white-space: nowrap;
 }
 
 /* line 1, ../sass/components/_view-mode_mode-2.scss */
