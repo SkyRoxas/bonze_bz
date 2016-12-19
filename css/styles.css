@@ -3687,8 +3687,12 @@ img {
   display: block;
   height: auto !important;
 }
+/* line 10, ../sass/base/_global.scss */
+img p img {
+  display: inline;
+}
 
-/* line 11, ../sass/base/_global.scss */
+/* line 16, ../sass/base/_global.scss */
 h1,
 h2,
 h3,
@@ -3698,39 +3702,44 @@ h6 {
   margin: 0;
 }
 
-/* line 20, ../sass/base/_global.scss */
+/* line 25, ../sass/base/_global.scss */
 body #main {
   padding: 0;
 }
 
-/* line 25, ../sass/base/_global.scss */
+/* line 29, ../sass/base/_global.scss */
+iframe {
+  max-width: 100%;
+}
+
+/* line 34, ../sass/base/_global.scss */
 .view .item-list > ul:not(.pager) {
   padding: 0;
 }
-/* line 28, ../sass/base/_global.scss */
+/* line 37, ../sass/base/_global.scss */
 .view .item-list > ul:not(.pager) > li.views-row {
   display: block;
 }
 
-/* line 34, ../sass/base/_global.scss */
+/* line 43, ../sass/base/_global.scss */
 .block {
   margin: 0;
   padding: 0;
 }
 
-/* line 40, ../sass/base/_global.scss */
+/* line 49, ../sass/base/_global.scss */
 body.hide_title h1#page-title {
   display: none;
 }
 
-/* line 45, ../sass/base/_global.scss */
+/* line 54, ../sass/base/_global.scss */
 h2.block__title {
   color: #98ACC0;
   font-size: 30px;
   padding: 20px 10px;
 }
 
-/* line 51, ../sass/base/_global.scss */
+/* line 60, ../sass/base/_global.scss */
 a {
   color: #2A3E53;
 }
@@ -3860,7 +3869,7 @@ a.more-link {
 
 /* line 1, ../sass/base/_attribute.scss */
 .margin-bottom-block {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 480px) {
@@ -4166,6 +4175,12 @@ body.sidebar-first #page #main #content {
   body.sidebar-first #page #main .sidebars {
     width: 0px;
   }
+}
+
+/* line 5, ../sass/layouts/_sidebars.scss */
+body.sidebar-first .sidebars .region-sidebar-first {
+  padding: 40px 0px;
+  box-sizing: border-box;
 }
 
 /* line 2, ../sass/layouts/_footer.scss */
@@ -5304,6 +5319,102 @@ body.sidebar-first #page #main #content {
 /* line 6, ../sass/components/_block_copyright.scss */
 .block_copyright p {
   margin: 0px;
+}
+
+/* line 2, ../sass/components/_block_search-block.scss */
+.block_search-block h2.block__title {
+  display: block;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 480px) {
+  /* line 2, ../sass/components/_block_search-block.scss */
+  .block_search-block h2.block__title {
+    padding: 5px 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 2, ../sass/components/_block_search-block.scss */
+  .block_search-block h2.block__title {
+    padding: 5px 20px;
+    font-size: 20px;
+  }
+}
+
+/* line 15, ../sass/components/_block_search-block.scss */
+#search-block-form {
+  display: block;
+  box-sizing: border-box;
+  padding: 40px 20px;
+}
+/* line 20, ../sass/components/_block_search-block.scss */
+#search-block-form > div {
+  position: relative;
+  overflow: hidden;
+  clear: both;
+}
+/* line 5, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
+#search-block-form > div > * {
+  margin: 0px 0px;
+}
+/* line 7, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
+#search-block-form > div > * > * {
+  padding: 0px 0px;
+  box-sizing: border-box;
+}
+/* line 23, ../sass/components/_block_search-block.scss */
+#search-block-form > div .container-inline {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: strech;
+  -ms-align-items: strech;
+  align-items: strech;
+  max-width: 80%;
+  position: relative;
+}
+/* line 30, ../sass/components/_block_search-block.scss */
+#search-block-form > div .container-inline:after {
+  content: "";
+  display: block;
+  background: #98ACC0;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+}
+/* line 41, ../sass/components/_block_search-block.scss */
+#search-block-form > div .container-inline .form-item {
+  margin: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+/* line 46, ../sass/components/_block_search-block.scss */
+#search-block-form > div .container-inline input[type='text'] {
+  display: block;
+  width: 100%;
+  background: #ffffff;
+  padding: 10px;
+  border: 0;
+  height: 100%;
+}
+/* line 54, ../sass/components/_block_search-block.scss */
+#search-block-form > div .container-inline input[type='submit'] {
+  display: block;
+  background: url("../images/active-search.png") no-repeat;
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  margin: 5px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  text-indent: -99999px;
 }
 
 /* line 1, ../sass/components/_js_scroll-fixed-lock.scss */

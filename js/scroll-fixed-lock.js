@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-    $('#content').css('minHeight', $(window).height());
+    $('#content').css('minHeight', $(window).height()*1.1);
 
 
     //sidebar lock

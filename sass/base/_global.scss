@@ -6,6 +6,11 @@ a {
 img {
     display: block;
     height: auto!important;
+    p{
+      img{
+        display: inline;
+      }
+    }
 }
 
 h1,
@@ -19,6 +24,10 @@ h6 {
 
 body #main {
     padding: 0;
+}
+
+iframe{
+  max-width: 100%;
 }
 
 .view {
