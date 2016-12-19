@@ -47,6 +47,10 @@
 </div>
 </header>
 
+<div id ="banner">
+  <?php print render($page['banner']); ?>
+</div>
+
 <div id="page">
 
 

@@ -4197,6 +4197,14 @@ body.sidebar-first #page #main #content {
   top: 0px;
 }
 
+/* line 1, ../sass/layouts/_banner.scss */
+#banner {
+  border-bottom: 1px solid #e8e9eb;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #98ACC0;
+}
+
 /* line 1, ../sass/layouts/_header_scroll.scss */
 .scroll_header {
   position: fixed !important;
@@ -4543,6 +4551,82 @@ body.sidebar-first #page #main #content {
   font-size: 14px;
 }
 
+/* line 1, ../sass/components/_image-block_logo-block.scss */
+.image-block_logo-block {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  position: relative;
+  letter-spacing: 10px;
+  color: #ffffff;
+}
+/* line 10, ../sass/components/_image-block_logo-block.scss */
+.image-block_logo-block > * {
+  display: block;
+  padding: 15px;
+}
+@media screen and (min-width: 1520px) {
+  /* line 15, ../sass/components/_image-block_logo-block.scss */
+  .image-block_logo-block .block-image {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1519px) {
+  /* line 15, ../sass/components/_image-block_logo-block.scss */
+  .image-block_logo-block .block-image {
+    display: block;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 15, ../sass/components/_image-block_logo-block.scss */
+  .image-block_logo-block .block-image {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 15, ../sass/components/_image-block_logo-block.scss */
+  .image-block_logo-block .block-image {
+    display: none;
+  }
+}
+/* line 19, ../sass/components/_image-block_logo-block.scss */
+.image-block_logo-block .block-body {
+  white-space: nowrap;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 22, ../sass/components/_image-block_logo-block.scss */
+  .image-block_logo-block .block-body p,
+  .image-block_logo-block .block-body p * {
+    font-size: 18px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 22, ../sass/components/_image-block_logo-block.scss */
+  .image-block_logo-block .block-body p,
+  .image-block_logo-block .block-body p * {
+    font-size: 12px !important;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 32, ../sass/components/_image-block_logo-block.scss */
+  .image-block_logo-block .block-body p:first-child,
+  .image-block_logo-block .block-body p:first-child * {
+    font-size: 35px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 32, ../sass/components/_image-block_logo-block.scss */
+  .image-block_logo-block .block-body p:first-child,
+  .image-block_logo-block .block-body p:first-child * {
+    font-size: 25px !important;
+  }
+}
+
 /* line 1, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 {
   position: relative;
@@ -4584,8 +4668,20 @@ body.sidebar-first #page #main #content {
 /* line 13, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .content-wrapper {
   position: relative;
+  position: relative;
+  overflow: hidden;
+  clear: both;
 }
-/* line 16, ../sass/components/_view-mode_mode-1.scss */
+/* line 5, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
+.view-mode-vm_1 .content-wrapper > * {
+  margin: -10px 0px;
+}
+/* line 7, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
+.view-mode-vm_1 .content-wrapper > * > * {
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+/* line 17, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .content-wrapper:after {
   content: "";
   display: block;
@@ -4598,7 +4694,7 @@ body.sidebar-first #page #main #content {
   border-radius: 20px;
   z-index: 1;
 }
-/* line 28, ../sass/components/_view-mode_mode-1.scss */
+/* line 29, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .content-wrapper > .wrapper {
   position: relative;
   box-sizing: border-box;
@@ -4609,7 +4705,7 @@ body.sidebar-first #page #main #content {
   margin: 0 5px 8px 0;
   z-index: 2;
 }
-/* line 40, ../sass/components/_view-mode_mode-1.scss */
+/* line 41, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .field-name-calendar {
   display: -webkit-flex;
   display: flex;
@@ -4620,7 +4716,7 @@ body.sidebar-first #page #main #content {
   -ms-align-items: center;
   align-items: center;
 }
-/* line 46, ../sass/components/_view-mode_mode-1.scss */
+/* line 47, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .field-name-ds-user-picture {
   border: 5px solid #98ACC0;
   border-radius: 50%;
@@ -4628,92 +4724,88 @@ body.sidebar-first #page #main #content {
   overflow: hidden;
 }
 @media screen and (min-width: 1520px) {
-  /* line 46, ../sass/components/_view-mode_mode-1.scss */
+  /* line 47, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-ds-user-picture {
     max-width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1519px) {
-  /* line 46, ../sass/components/_view-mode_mode-1.scss */
+  /* line 47, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-ds-user-picture {
     max-width: 80px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 46, ../sass/components/_view-mode_mode-1.scss */
+  /* line 47, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-ds-user-picture {
     max-width: 60px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 46, ../sass/components/_view-mode_mode-1.scss */
+  /* line 47, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-ds-user-picture {
     max-width: 60px;
   }
 }
 @media screen and (min-width: 1520px) {
-  /* line 46, ../sass/components/_view-mode_mode-1.scss */
+  /* line 47, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-ds-user-picture {
     border-width: 5px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1519px) {
-  /* line 46, ../sass/components/_view-mode_mode-1.scss */
+  /* line 47, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-ds-user-picture {
     border-width: 3px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 46, ../sass/components/_view-mode_mode-1.scss */
+  /* line 47, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-ds-user-picture {
     border-width: 3px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 46, ../sass/components/_view-mode_mode-1.scss */
+  /* line 47, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-ds-user-picture {
     border-width: 2px;
   }
 }
-/* line 55, ../sass/components/_view-mode_mode-1.scss */
-.view-mode-vm_1 .field-name-body {
-  box-sizing: border-box;
-  padding: 20px 0;
-}
-/* line 60, ../sass/components/_view-mode_mode-1.scss */
+/* line 56, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .field-name-author {
   text-align: center;
   padding: 10px;
 }
 @media screen and (min-width: 1520px) {
-  /* line 60, ../sass/components/_view-mode_mode-1.scss */
+  /* line 56, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-author {
     display: block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1519px) {
-  /* line 60, ../sass/components/_view-mode_mode-1.scss */
+  /* line 56, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-author {
     display: none;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 60, ../sass/components/_view-mode_mode-1.scss */
+  /* line 56, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-author {
     display: none;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 60, ../sass/components/_view-mode_mode-1.scss */
+  /* line 56, ../sass/components/_view-mode_mode-1.scss */
   .view-mode-vm_1 .field-name-author {
     display: none;
   }
 }
-/* line 66, ../sass/components/_view-mode_mode-1.scss */
+/* line 62, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .field-name-field-tag {
   display: block;
+  border-bottom: 1px solid #efeaea;
 }
-/* line 69, ../sass/components/_view-mode_mode-1.scss */
+/* line 66, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .field-name-field-tag .field-items {
   display: -webkit-flex;
   display: flex;
@@ -4724,17 +4816,17 @@ body.sidebar-first #page #main #content {
   -ms-justify-content: flex-end;
   justify-content: flex-end;
 }
-/* line 74, ../sass/components/_view-mode_mode-1.scss */
+/* line 71, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .field-name-field-tag .field-items .field-item {
   position: relative;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 79, ../sass/components/_view-mode_mode-1.scss */
+/* line 76, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .field-name-field-tag .field-items .field-item:not(first-child) {
   margin-left: 10px;
 }
-/* line 83, ../sass/components/_view-mode_mode-1.scss */
+/* line 80, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .field-name-field-tag .field-items .field-item:after {
   content: "";
   display: block;
@@ -4746,7 +4838,7 @@ body.sidebar-first #page #main #content {
   background: #DCDCDC;
   z-index: 1;
 }
-/* line 94, ../sass/components/_view-mode_mode-1.scss */
+/* line 91, ../sass/components/_view-mode_mode-1.scss */
 .view-mode-vm_1 .field-name-field-tag .field-items .field-item a {
   display: block;
   position: relative;
@@ -4756,6 +4848,15 @@ body.sidebar-first #page #main #content {
   box-sizing: border-box;
   border: 1px solid;
   white-space: nowrap;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 102, ../sass/components/_view-mode_mode-1.scss */
+.view-mode-vm_1 .field-name-field-tag .field-items .field-item a:hover {
+  color: #ffffff;
+  background: #98ACC0;
 }
 
 /* line 1, ../sass/components/_view-mode_mode-2.scss */
@@ -4831,8 +4932,20 @@ body.sidebar-first #page #main #content {
 /* line 25, ../sass/components/_view-mode_mode-2.scss */
 .view-mode-vm_2 .content-wrapper {
   position: relative;
+  position: relative;
+  overflow: hidden;
+  clear: both;
 }
-/* line 28, ../sass/components/_view-mode_mode-2.scss */
+/* line 5, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
+.view-mode-vm_2 .content-wrapper > * {
+  margin: -10px 0px;
+}
+/* line 7, ../sass/mixin/sass-collection/mixin/_child-margin.scss */
+.view-mode-vm_2 .content-wrapper > * > * {
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+/* line 29, ../sass/components/_view-mode_mode-2.scss */
 .view-mode-vm_2 .content-wrapper:after {
   content: "";
   display: block;
@@ -4844,7 +4957,7 @@ body.sidebar-first #page #main #content {
   background: #DCDCDC;
   z-index: 1;
 }
-/* line 40, ../sass/components/_view-mode_mode-2.scss */
+/* line 41, ../sass/components/_view-mode_mode-2.scss */
 .view-mode-vm_2 .content-wrapper > .wrapper {
   position: relative;
   box-sizing: border-box;
@@ -4853,6 +4966,148 @@ body.sidebar-first #page #main #content {
   background: #ffffff;
   margin: 0 5px 5px 0;
   z-index: 2;
+}
+/* line 53, ../sass/components/_view-mode_mode-2.scss */
+.view-mode-vm_2 .field-name-ds-user-picture {
+  border: 5px solid #98ACC0;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (min-width: 1520px) {
+  /* line 53, ../sass/components/_view-mode_mode-2.scss */
+  .view-mode-vm_2 .field-name-ds-user-picture {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1519px) {
+  /* line 53, ../sass/components/_view-mode_mode-2.scss */
+  .view-mode-vm_2 .field-name-ds-user-picture {
+    max-width: 80px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 53, ../sass/components/_view-mode_mode-2.scss */
+  .view-mode-vm_2 .field-name-ds-user-picture {
+    max-width: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 53, ../sass/components/_view-mode_mode-2.scss */
+  .view-mode-vm_2 .field-name-ds-user-picture {
+    max-width: 60px;
+  }
+}
+@media screen and (min-width: 1520px) {
+  /* line 53, ../sass/components/_view-mode_mode-2.scss */
+  .view-mode-vm_2 .field-name-ds-user-picture {
+    border-width: 5px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1519px) {
+  /* line 53, ../sass/components/_view-mode_mode-2.scss */
+  .view-mode-vm_2 .field-name-ds-user-picture {
+    border-width: 3px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 53, ../sass/components/_view-mode_mode-2.scss */
+  .view-mode-vm_2 .field-name-ds-user-picture {
+    border-width: 3px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 53, ../sass/components/_view-mode_mode-2.scss */
+  .view-mode-vm_2 .field-name-ds-user-picture {
+    border-width: 2px;
+  }
+}
+/* line 62, ../sass/components/_view-mode_mode-2.scss */
+.view-mode-vm_2 .field-name-author {
+  text-align: center;
+  padding: 10px;
+}
+@media screen and (min-width: 1520px) {
+  /* line 62, ../sass/components/_view-mode_mode-2.scss */
+  .view-mode-vm_2 .field-name-author {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1519px) {
+  /* line 62, ../sass/components/_view-mode_mode-2.scss */
+  .view-mode-vm_2 .field-name-author {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 62, ../sass/components/_view-mode_mode-2.scss */
+  .view-mode-vm_2 .field-name-author {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 62, ../sass/components/_view-mode_mode-2.scss */
+  .view-mode-vm_2 .field-name-author {
+    display: none;
+  }
+}
+/* line 68, ../sass/components/_view-mode_mode-2.scss */
+.view-mode-vm_2 .field-name-field-tag {
+  display: block;
+  border-bottom: 1px solid #efeaea;
+}
+/* line 72, ../sass/components/_view-mode_mode-2.scss */
+.view-mode-vm_2 .field-name-field-tag .field-items {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+}
+/* line 77, ../sass/components/_view-mode_mode-2.scss */
+.view-mode-vm_2 .field-name-field-tag .field-items .field-item {
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* line 82, ../sass/components/_view-mode_mode-2.scss */
+.view-mode-vm_2 .field-name-field-tag .field-items .field-item:not(first-child) {
+  margin-left: 10px;
+}
+/* line 86, ../sass/components/_view-mode_mode-2.scss */
+.view-mode-vm_2 .field-name-field-tag .field-items .field-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -3px;
+  bottom: -3px;
+  background: #DCDCDC;
+  z-index: 1;
+}
+/* line 97, ../sass/components/_view-mode_mode-2.scss */
+.view-mode-vm_2 .field-name-field-tag .field-items .field-item a {
+  display: block;
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid;
+  white-space: nowrap;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 108, ../sass/components/_view-mode_mode-2.scss */
+.view-mode-vm_2 .field-name-field-tag .field-items .field-item a:hover {
+  color: #ffffff;
+  background: #98ACC0;
 }
 
 /* line 1, ../sass/components/_nav_logo.scss */

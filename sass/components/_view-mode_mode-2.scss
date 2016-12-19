@@ -24,6 +24,7 @@
     //artcle info
     .content-wrapper {
         position: relative;
+        @include child-margin(0px,10px);
 
         &:after {
             content: "";
@@ -46,6 +47,70 @@
             background: #ffffff;
             margin: 0 5px 5px 0;
             z-index: 2;
+        }
+    }
+
+    .field-name-ds-user-picture {
+        border: 5px solid #98ACC0;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        @include rwd-coding(max-width,100%,80px,60px,60px);
+        @include rwd-coding(border-width,5px,3px,3px,2px);
+    }
+
+    .field-name-author {
+        text-align: center;
+        padding: 10px;
+        @include rwd-coding(display,block,none,none,none);
+    }
+
+    .field-name-field-tag {
+        display: block;
+        border-bottom: 1px solid #efeaea;
+
+        .field-items {
+            @include display-flex;
+            @include flex-wrap(wrap);
+            @include justify-content(flex-end);
+
+            .field-item {
+                position: relative;
+                margin-top: 5px;
+                margin-bottom: 5px;
+
+                &:not(first-child) {
+                    margin-left: 10px;
+                }
+
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    @include size(100%);
+                    right: -3px;
+                    bottom: -3px;
+                    background: #DCDCDC;
+                    z-index: 1;
+                }
+
+                a {
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                    background: #ffffff;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    border: 1px solid;
+                    white-space: nowrap;
+                    @include transition(0.3s);
+
+                    &:hover {
+                        color: #ffffff;
+                        background: get-bg-color(m1);
+                    }
+                }
+            }
         }
     }
 }
