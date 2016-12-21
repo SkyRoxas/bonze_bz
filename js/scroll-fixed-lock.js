@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-    $('#content').css('minHeight', $(window).height()*1.1);
+    $('#content').css('minHeight', $(window).height() * 1.1);
 
 
     //sidebar lock
@@ -32,9 +32,9 @@ jQuery(document).ready(function($) {
 
 
         if ($(window).width() > 1200) {
-            $($scrollFixedItem).parent().css({
+            $($scrollFixedItem).parent().animate({
                 'width': $($scrollFixedItem).width(),
-            })
+            },0)
         } else(
             $($scrollFixedItem).parent().css({
                 'width': 'auto',
@@ -86,28 +86,6 @@ jQuery(document).ready(function($) {
         })
 
     }
-
-    //執行fscroll_fixed_lock function
-    scroll_fixed_lock('.region-sidebar-first');
-
-    setTimeout(function() {
-        scroll_fixed_lock('.region-sidebar-first');
-    }, 1500);
-
-
-    $(window).resize(function() {
-        scroll_fixed_lock('.region-sidebar-first');
-    });
-
-    //防呆 disqus 後面 loading出的高
-    setTimeout(function() {
-        if ($('#disqus_thread').length > 0) {
-            scroll_fixed_lock('.region-sidebar-first');
-        }
-    }, 5000);
-
-
-
 
 
 
@@ -180,17 +158,17 @@ jQuery(document).ready(function($) {
             //sidebars animate
 
             //for pc
-            if (i % 2 !== 0) {
+            if (i % 2 == 0) {
                 if ($(window).width() > 1200) {
                     $($sidebars).parent().animate({
                         'width': '0',
-                    }, 300)
+                    }, 450)
                 }
             } else {
                 if ($(window).width() > 1200) {
                     $($sidebars).parent().animate({
                         'width': $('.region-sidebar-first').width(),
-                    }, 300)
+                    }, 450)
                 }
             }
 
@@ -210,8 +188,52 @@ jQuery(document).ready(function($) {
             }
             i++;
         })
+
+
+
+
     }
 
+
+
+    //執行fscroll_fixed_lock function
+    scroll_fixed_lock('.region-sidebar-first');
+
+    setTimeout(function() {
+        scroll_fixed_lock('.region-sidebar-first');
+    }, 1500);
+
+
+    $(window).resize(function() {
+        scroll_fixed_lock('.region-sidebar-first');
+    });
+
+    //防呆 disqus 後面 loading出的高
+    setTimeout(function() {
+        if ($('#disqus_thread').length > 0) {
+            scroll_fixed_lock('.region-sidebar-first');
+        }
+    }, 5000);
+
     sidebarNav();
+
+
+    $once = 0;
+    $(window).scroll(function() {
+        if ($(window).width() > 1200) {
+            if ($(window).scrollTop() > $($startItem).innerHeight() + 300 +
+                $startItemOffset.top && $(window).scrollTop() < $endItemOffset.top - $(window).height()) {
+                if ($once == 1) {
+                    $('.sidebarNav_button').trigger('click');
+                }
+                $once++;
+            }
+        }
+
+
+
+    })
+
+
 
 })

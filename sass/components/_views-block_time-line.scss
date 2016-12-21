@@ -20,7 +20,7 @@
 
     .timeLine-bar {
         @include absolute-align(center,left);
-        @include transition(0.4s);
+        @include transition(0.6s);
         height: 0;
         width: 5px;
         max-height: 100%;

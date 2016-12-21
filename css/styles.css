@@ -4187,9 +4187,10 @@ body.sidebar-first .sidebars .region-sidebar-first {
 #footer {
   position: relative;
   z-index: 1;
+  background: #ffffff;
 }
 
-/* line 8, ../sass/layouts/_footer.scss */
+/* line 9, ../sass/layouts/_footer.scss */
 #footer {
   display: block;
   box-sizing: border-box;
@@ -4200,7 +4201,7 @@ body.sidebar-first .sidebars .region-sidebar-first {
   -ms-justify-content: center;
   justify-content: center;
 }
-/* line 15, ../sass/layouts/_footer.scss */
+/* line 16, ../sass/layouts/_footer.scss */
 #footer:before {
   content: "";
   position: absolute;
@@ -5261,10 +5262,10 @@ body.sidebar-first .sidebars .region-sidebar-first {
   -ms-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  -moz-transition: 0.4s;
-  -o-transition: 0.4s;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
   height: 0;
   width: 5px;
   max-height: 100%;
