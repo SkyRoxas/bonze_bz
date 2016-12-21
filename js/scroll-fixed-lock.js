@@ -179,29 +179,34 @@ jQuery(document).ready(function($) {
         $('.sidebarNav_button').click(function() {
             //sidebars animate
 
-            if (i % 2 == 0) {
+            //for pc
+            if (i % 2 !== 0) {
                 if ($(window).width() > 1200) {
                     $($sidebars).parent().animate({
                         'width': '0',
-                    },300)
-                } else {
-                    $($content).animate({
-                        'left': $('.region-sidebar-first').innerWidth(),
-                    },300)
+                    }, 300)
                 }
-
-
             } else {
                 if ($(window).width() > 1200) {
                     $($sidebars).parent().animate({
                         'width': $('.region-sidebar-first').width(),
-                    },300)
-                } else {
+                    }, 300)
+                }
+            }
+
+            //for phone
+            if (i % 2 == 0) {
+                if ($(window).width() < 1200) {
+                    $($content).animate({
+                        'left': $('.region-sidebar-first').innerWidth(),
+                    }, 300)
+                }
+            } else {
+                if ($(window).width() < 1200) {
                     $($content).animate({
                         'left': '0',
-                    },300)
+                    }, 300)
                 }
-
             }
             i++;
         })
