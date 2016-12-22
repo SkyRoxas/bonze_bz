@@ -156,7 +156,7 @@ function bonze_bs_preprocess_node(&$variables, $hook){
 
   if($variables['view_mode']=='vm_2'){
 
-    $colClass1 ="col-lg col-md col-xs-12";
+    $colClass1 ="col-xs-12";
 
       //dpm($variables);
         $variables['content']['ds_user_picture']['#prefix']='<div class ="row wrapper center-xs"><div class ="field-perfile"><div class ="perfile-wrapper wrapper">';

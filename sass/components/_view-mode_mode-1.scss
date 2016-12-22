@@ -13,29 +13,8 @@
     .content-wrapper {
         position: relative;
         @include child-margin(0px,10px);
-
-        &:after {
-            content: "";
-            display: block;
-            position: absolute;
-            @include size(98%);
-            right: 0;
-            bottom: -8px;
-            background: #DCDCDC;
-            border-radius: 20px;
-            z-index: 1;
-        }
-
-        > .wrapper {
-            position: relative;
-            box-sizing: border-box;
-            border: 2px solid get-bg-color(m1);
-            border-radius: 20px;
-            padding: 20px 25px;
-            background: #ffffff;
-            margin: 0 5px 8px 0;
-            z-index: 2;
-        }
+        @extend .border-mode-1;
+        border-radius: 5px;
     }
     //field style---------------------------------------------------------------
     .field-name-calendar {
