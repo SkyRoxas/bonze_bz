@@ -73,6 +73,7 @@ scripts[] = js/views-block_time-line.js
 scripts[] = js/menu-block_menu-1.js
 scripts[] = js/scroll_header.js
 scripts[] = js/scroll_state_bar.js
+scripts[] = js/scroll_fake-scrollbar.js
 
 
 ; This section lists the regions defined in Zen's default page.tpl.php and
