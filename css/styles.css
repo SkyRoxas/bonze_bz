@@ -1427,7 +1427,7 @@ tr.selected td {
 /* line 804, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1480420103');
+  background-image: url('../images/progress.gif?1482589776');
 }
 
 /**
@@ -4179,7 +4179,6 @@ body.sidebar-first #page #main #content {
 
 /* line 5, ../sass/layouts/_sidebars.scss */
 body.sidebar-first .sidebars .region-sidebar-first {
-  padding: 40px 0px;
   box-sizing: border-box;
 }
 
