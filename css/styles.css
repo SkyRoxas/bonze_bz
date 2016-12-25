@@ -4177,8 +4177,10 @@ body.sidebar-first #page #main #content {
   }
 }
 
-/* line 5, ../sass/layouts/_sidebars.scss */
+/* line 4, ../sass/layouts/_sidebars.scss */
 body.sidebar-first .sidebars .region-sidebar-first {
+  display: block;
+  padding: 40px 0;
   box-sizing: border-box;
 }
 

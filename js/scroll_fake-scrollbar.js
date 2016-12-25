@@ -16,7 +16,8 @@
         var $fakeScrollBar = new Object;
         $fakeScrollBar.name = "fake_scrollBar";
         $fakeScrollBar.item = $($fakeScrollBar.name);
-        $fakeScrollBar.color = "#98ACC0";
+        $fakeScrollBar.barColor = "rgba(0,0,0,0)";
+        $fakeScrollBar.navColor = "#98ACC0";
         $fakeScrollBar.width = "5px";
 
         var $browserScoll = new Object;
@@ -32,10 +33,11 @@
 
 
         //append fake_scrollBar element
-        $element.item.wrapInner('<div class ="scrollBar-wrapper wrapper"></div>');
-        $element.item.children().append('<div class ="' + $fakeScrollBar.name + '"><div class ="wrapper"><div class ="scroll-nav"></div></div></div>');
 
-        $element.item.children().css('position', 'relative');
+        $element.item.append('<div class ="' + $fakeScrollBar.name + '"><div class ="wrapper"><div class ="scroll-nav"></div></div></div>');
+
+        //$element.item.wrapInner('<div class ="scrollBar-wrapper wrapper"></div>');
+        //$element.item.children().css('position', 'relative');
 
         $element.item.find('.' + $fakeScrollBar.name).css({
             'position': 'absolute',
@@ -44,7 +46,7 @@
             'display': "block",
             'width': $fakeScrollBar.width,
             'height': $(window).height(),
-            'background': 'gray',
+            'background': $fakeScrollBar.barColor,
         })
 
         $element.item.find('.' + $fakeScrollBar.name).children().css({
@@ -61,7 +63,7 @@
             'display': "block",
             'width': '100%',
             'height': ($element.height / $element.scrollHeight) * 100 + "%",
-            'background': $fakeScrollBar.color,
+            'background': $fakeScrollBar.navColor,
         })
 
         $($element.item).scroll(function() {
@@ -85,7 +87,6 @@
     $(document).ready(function() {
         setTimeout(function() {
             scroll_fakeScrollbar('.region-sidebar-first');
-            //scroll_fakeScrollbar('.html');
         }, 100)
     })
 

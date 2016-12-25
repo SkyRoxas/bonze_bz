@@ -1,11 +1,11 @@
-body.sidebar-first{
-  .sidebars{
-    //background: #ffffff;
-
-.region-sidebar-first{
-  //padding: 40px 0px;
-  box-sizing: border-box;
-  //clip: rect(auto, 312px, auto, auto);
-}
-  }
+body.sidebar-first {
+    .sidebars {
+        //background: #ffffff;
+        .region-sidebar-first {
+            display: block;
+            padding: 40px 0;
+            box-sizing: border-box;
+            //clip: rect(auto, 312px, auto, auto);
+        }
+    }
 }
