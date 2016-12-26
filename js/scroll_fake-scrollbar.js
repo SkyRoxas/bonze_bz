@@ -14,15 +14,24 @@
             $element.height = $element.item.innerHeight();
         })
 
+
         var $fakeScrollBar = new Object;
         $fakeScrollBar.name = "fake_scrollBar";
         $fakeScrollBar.item = $($fakeScrollBar.name);
-        $fakeScrollBar.barColor = "rgba(0,0,0,0)";
+        $fakeScrollBar.width = 4;
+        $fakeScrollBar.barColor = "rgba(229,229,229,0.8)";
+        $fakeScrollBar.navWidth = 6;
         $fakeScrollBar.navColor = "#98ACC0";
-        $fakeScrollBar.width = "5px";
+        $fakeScrollBar.margin = 10;
+
 
         var $browserScoll = new Object;
-        $browserScoll.width = 15;
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            $browserScoll.width = 0;
+        } else {
+            $browserScoll.width = 15;
+        }
+
 
 
         //hidden browserScoll
@@ -36,9 +45,6 @@
         //append fake_scrollBar element
 
         $element.item.append('<div class ="' + $fakeScrollBar.name + '"><div class ="wrapper"><div class ="scroll-nav"></div></div></div>');
-
-        //$element.item.wrapInner('<div class ="scrollBar-wrapper wrapper"></div>');
-        //$element.item.children().css('position', 'relative');
 
 
         //scrollbar
@@ -55,19 +61,21 @@
         $element.item.find('.' + $fakeScrollBar.name).children().css({
             'position': 'relative',
             'display': 'block',
-            'width': '100%',
+            'width': $fakeScrollBar.width,
             'height': '100%',
+            'right':$fakeScrollBar.width,
         })
 
         //scroll nav
         $element.item.find('.' + $fakeScrollBar.name).children().children().css({
             'position': 'absolute',
             'right': '0',
-            'top': $element.item.scrollTop(),
+            'top': $element.item.scrollTop() + $fakeScrollBar.margin,
             'display': "block",
-            'width': '100%',
+            'width': $fakeScrollBar.navWidth,
             'height': ($element.height / $element.scrollHeight) * 100 + "%",
             'background': $fakeScrollBar.navColor,
+            'z-index':'500',
         })
 
         //resize evevt
@@ -76,7 +84,7 @@
             $element.item.find('.' + $fakeScrollBar.name).css({
                     'height': $element.height,
                 })
-            //scroll nav
+                //scroll nav
             $element.item.find('.' + $fakeScrollBar.name).children().children().css({
                 'height': ($element.height / $element.scrollHeight) * 100 + "%",
             })
@@ -88,7 +96,12 @@
             })
             if (($element.item.scrollTop() + $element.height) !== $element.scrollHeight) {
                 $element.item.find('.' + $fakeScrollBar.name).children().children().css({
-                    'top': ($element.height / $element.scrollHeight) * $element.item.scrollTop(),
+                    'top': ($element.height / $element.scrollHeight) * $element.item.scrollTop() - $fakeScrollBar.margin,
+                })
+            }
+            if ($element.item.scrollTop() == 0) {
+                $element.item.find('.' + $fakeScrollBar.name).children().children().css({
+                    'top': $element.item.scrollTop() + $fakeScrollBar.margin,
                 })
             }
             //console.log(($element.item.scrollTop() + $(window).height()), $element.scrollHeight);

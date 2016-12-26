@@ -4182,6 +4182,25 @@ body.sidebar-first .sidebars .region-sidebar-first {
   display: block;
   padding: 40px 0;
   box-sizing: border-box;
+  position: relative;
+}
+/* line 24, ../sass/layouts/_sidebars.scss */
+body.sidebar-first .sidebars .region-sidebar-first .fake_scrollBar .wrapper .scroll-nav {
+  border-radius: 100px;
+  opacity: 0;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+/* line 35, ../sass/layouts/_sidebars.scss */
+body.sidebar-first .sidebars .region-sidebar-first:hover .fake_scrollBar .wrapper .scroll-nav {
+  opacity: 0.6;
+}
+
+/* line 46, ../sass/layouts/_sidebars.scss */
+.region-sidebar-first::-webkit-scrollbar {
+  visibility: hidden;
 }
 
 /* line 2, ../sass/layouts/_footer.scss */
