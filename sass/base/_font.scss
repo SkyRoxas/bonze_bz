@@ -87,6 +87,11 @@ h5 {
 
 a {
     color: #6684A3;
+    @include transition(0.2s);
+    opacity: 1;
+    &:hover{
+    opacity: 0.5;
+    }
 }
 
 a.more-link {

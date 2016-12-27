@@ -173,4 +173,19 @@ function bonze_bs_preprocess_node(&$variables, $hook){
         //   $variables['content']['title']['#prefix']='<div class ="field-content first-lg first-md last-xs '.$colClass1.'"><div class ="content-wrapper wrapper"><div class ="wrapper">';
         // }
   }
+
+  if($variables['view_mode']=='full'){
+
+    $colClass1 ="col-xs-12";
+
+      //dpm($variables);
+        $variables['content']['ds_user_picture']['#prefix']='<div class ="perfile-block margin-bottom-block middle-xs"><div class ="row">';
+        //$variables['content']['ds_user_picture']['#suffix']='<div>';
+        $variables['content']['author']['#prefix'] = '<div class ="perfile-info-field  col-xs"><div class ="row"><div class ="col-xs-12 "><div class ="row">';
+        $variables['content']['post_date']['#suffix']='</div></div>';
+        $variables['content']['field_tag']['#prefix'] ='<div class ="col-xs-12">';
+        $variables['content']['field_tag']['#suffix'] ='</div></div></div></div></div>';
+
+
+  }
 }

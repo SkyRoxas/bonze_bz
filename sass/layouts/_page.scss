@@ -34,3 +34,12 @@ body.sidebar-first {
         }
     }
 }
+
+body.not-front{
+  #content{
+    >.region-wrapper{
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+  }
+}

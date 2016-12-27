@@ -6,12 +6,14 @@
 @import "image-block_logo-block";
 
 //view mode
+@import "view-mode_view-mode-full";
 @import "view-mode_mode-1";
 @import "view-mode_mode-2";
 
 //nav
 @import "nav_logo";
 @import "nav_breadcrumb";
+@import "nav_pager";
 
 //tagclouds-block
 @import "tagclouds-block_tagclouds-1";
@@ -28,6 +30,9 @@
 
 //border style
 @import "border_mode-1";
+
+//field
+@import "field-tag_mode-1";
 
 //js
 @import "_js_scroll-fixed-lock";

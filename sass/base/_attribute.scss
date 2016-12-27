@@ -11,3 +11,12 @@
          @include child-margin(0px,40px);
     }
 }
+
+.child-margin-2 {
+    @include rwd-screen(pc,small-pad) {
+         @include child-margin(50px,20px);
+    }
+    @include rwd-screen(phone) {
+         @include child-margin(50px,20px);
+    }
+}
